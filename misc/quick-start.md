@@ -4,6 +4,20 @@ Welcome to Repl.it!  This guide is meant to give you a quick overview of the man
 
 No programming knowledge is necessary.  This quick start guide is in Python.
 
+1. [Creating a New Python 3 Repl](#creating-a-new-python-3-repl)
+2. [Renaming and Describing your Repl](#renaming-and-describing-your-repl)
+3. [The Repl Environment](#the-repl-environment)
+4. [Hello World!](#hello-world)
+5. [A Simple Input Program](#a-simple-input-program)
+6. [Adding Packages](#adding-packages)
+7. [Creating Python Plots](#creating-python-plots)
+8. [Starting a Web Server](#starting-a-web-server)
+9. [Adding Secret Keys](#adding-secret-keys)
+10. [Sharing Your Repl](#sharing-your-repl)
+11. [Sample Repls](#sample-repls)
+12. [More from our Community](#more-from-our-community)
+13. [Moving Forward](#moving-forward)
+
 ## Creating a New Python 3 Repl
 
 On your [/repls](Repls Dashboard), you create a new repl by clicking on "Start Coding Now" or the red button in the bottom right corner.  This will bring you to a page with a list of our supported languages.
@@ -32,7 +46,7 @@ There are three main parts to the Repl:
 2. The **Editor**, where you write code.
 3. The **Console/Terminal**, where you can interact with your code or evaluate code line-by-line.
 
-## Hello, World!
+## Hello World!
 
 Let's start with the **Console/Terminal**.  In that section, type in the following and hit enter:
 
