@@ -93,8 +93,7 @@
     "contents": [
       {
         "name": "Quick Start Guide",
-        "slug": "quick-start",
-        "dev": true
+        "slug": "quick-start"
       },
       {
         "name": "Using Repl.it for Free",
