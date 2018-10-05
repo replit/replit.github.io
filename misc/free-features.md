@@ -4,7 +4,7 @@ Repl.it offers a number of features that every user can access and utilize for f
 
 ## Repls
 
-Repls are the core of the Repl.it service, and they will always be available for all users.  You can as many repls as you like, and in any language.  Start by logging into your account (or [signing up for a free account](/signup)).
+Repls are the core of the Repl.it service, and they will always be available for all users.  You can create as many repls as you like, and in any language.  Start by logging into your account (or [signing up for a free account](/signup)).
 
 You can access your repls and create new ones in the "my repls" view, found at the top of your page once logged in.
 
