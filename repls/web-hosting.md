@@ -30,6 +30,10 @@ Note that a repl's public link will persist, even after the repl has been delete
 You can clear a repl of it's server code before deleting it in order to prevent it
 from loading.
 
+## Custom Domains
+
+Coming soon!
+
 ## Example
 
 Here's an example of a hosted webpage using p5.js.  The live, full-screen version
