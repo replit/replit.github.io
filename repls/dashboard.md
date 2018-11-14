@@ -62,7 +62,7 @@ you with language suggestions.
 Your search term will need to be the language name we use internally, which is why
 we suggest selecting from the provided list.  For example, to search for all C++11
 languages, you would search `language:cpp11`.  To search for HTML, CSS, JS repls,
-you would search `language:web_project`.  This filter is case sensitive.
+you would search `language:html`.  This filter is case sensitive.
 
 ### Search by Title
 

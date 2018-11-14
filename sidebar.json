@@ -104,6 +104,10 @@
         "slug": "public-schools"
       },
       {
+        "name": "Security",
+        "slug": "security"
+      },
+      {
         "name": "Licensing Info",
         "slug": "licensing"
       },

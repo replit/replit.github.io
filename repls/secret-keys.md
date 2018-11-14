@@ -51,7 +51,7 @@ print(os.getenv("DB_USERNAME"))
 ### JavaScript
 
 ```javascript
-print(process.env.TOKEN)
+console.log(process.env.TOKEN)
 // prints '38zdJSDF48fKJSD4824fN'
 ```
 
