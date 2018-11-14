@@ -32,7 +32,28 @@ from loading.
 
 ## Custom Domains
 
-Coming soon!
+You can point a custom domain to a hosted repl.  This includes both [static sites](#hosting-a-web-site) and [HTTP servers](/site/docs/repls/http-servers).  To start, click on the pencil icon next to the URL for your hosted repl:
+
+![screenshot of edit button](https://replit.github.io/images/repls/edit-custom-domain-icon.png)
+
+Enter the domain that you own:
+
+![screenshot of cname instructions](https://replit.github.io/images/repls/custom-domain-cname.png)
+
+You will be prompted to add a `CNAME` record to your domain pointing at a `repl.co` link.  Go to the service that manages your domain and find the section that allows you to add Resource Records.
+
+Add a new entry by entering:
+* `name`: this will be the subdomain pointing to the repl.  Some services do not allow you to leave it blank (root).  You can set it as www to point www.yourdomain.com to your repl.
+* `type`: `CNAME`
+* `data`: This should be the repl.co link from the Repl.it custom domain popover.  It should contain a long string of random numbers and letters.
+
+Here's an example of how it might look, using Google Domains:
+
+![screenshot of cname instructions](https://replit.github.io/images/repls/google-setup-custom-domain.png)
+
+It may take some time to actually update.  If you used `www` for the name, you should enter `www.yourdomain.com` on the Repl.it interface.  Once connected, click the big green button to finish and your domain should be linked!
+
+You can unlink your domain at any time by clicking on the pencil icon and clicking "Unlink".
 
 ## Example
 
