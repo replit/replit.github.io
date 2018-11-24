@@ -37,6 +37,6 @@ configure the server, please se
 ## Persistence and Takedown Requests
 
 Note that a repl's public link will persist, even after the repl has been deleted.
-You can clear a repl of it's server code before deleting it in order to prevent it
+You can clear a repl of its server code before deleting it in order to prevent it
 from loading.  If you require your web app to be taken down, please contact us at
 [contact@repl.it](mailto:contact@repl.it).
