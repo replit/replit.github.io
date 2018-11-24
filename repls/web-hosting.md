@@ -27,7 +27,7 @@ Changes made to your repl will not be reflected in the live version until
 the web project is re-run.  Running a web repl will update its live version.
 
 Note that a repl's public link will persist, even after the repl has been deleted.
-You can clear a repl of it's server code before deleting it in order to prevent it
+You can clear a repl of its server code before deleting it in order to prevent it
 from loading.
 
 ## Custom Domains
