@@ -20,7 +20,7 @@ No programming knowledge is necessary.  This quick start guide is in Python.
 
 ## Creating a New Python 3 Repl
 
-On your [/repls](Repls Dashboard), you create a new repl by clicking on "Start Coding Now" or the red button in the bottom right corner.  This will bring you to a page with a list of our supported languages.
+On your [Repls Dashboard](/repls), you create a new repl by clicking on "Start Coding Now" or the red button in the bottom right corner.  This will bring you to a page with a list of our supported languages.
 
 Go ahead and select Python.  This will bring you to your workspace.
 
