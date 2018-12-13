@@ -70,6 +70,10 @@
         "slug": "markdown"
       },
       {
+        "name": "Exporting Classrooms",
+        "slug": "exports"
+      },
+      {
         "name": "Sharing Classrooms",
         "slug": "sharing"
       },
