@@ -74,6 +74,10 @@
         "slug": "exports"
       },
       {
+        "name": "Classroom Webhooks",
+        "slug": "webhooks"
+      },
+      {
         "name": "Sharing Classrooms",
         "slug": "sharing"
       },
