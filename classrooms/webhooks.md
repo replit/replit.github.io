@@ -3,8 +3,7 @@
 1. [What are webhooks?](#what-are-webhooks)
 2. [How do you use webhooks?](#how-do-you-use-webhooks)
 3. [Security](#security)
-4. [Event Types]
-
+4. [Event Types](#event-types)
   * [`student_submits_assignment`](#student-submits-assignment)
 
 ## What are webhooks?
