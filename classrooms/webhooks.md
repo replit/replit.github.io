@@ -7,6 +7,8 @@
 
   * [`student_submits_assignment`](#student_submits_assignment)
 
+5. [More with Webhooks](#more-with-webhooks)
+
 ## What are webhooks?
 
 Webhooks allow you to send event data to services or your own servers for further processing/storing/handling.
@@ -94,3 +96,7 @@ This event is fired anytime a student submits an assignment.  The event is in th
 ```
 
 `event.submission.files` will only contain files if they have been changed by the student from the original assignment.  This is to prevent large dataset files from being sent with each event.
+
+# More with Webhooks
+
+We'd love to hear about how you're using webhooks on our [feedback post](TODO).  Additionally, if you have more ideas for webhook events, please share them with us there as well.
