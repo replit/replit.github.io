@@ -45,7 +45,7 @@ To ensure that the webhook event is coming from us (and not any third party), we
 
 Please note that both classroom owners and teacher assistants can edit webhook settings.
 
-If a webhook fails, it will try again for a total of 10 times, waiting about 10 seconds between each try.
+If a webhook fails, it will try again for a total of 10 times, waiting about 10 seconds between each try.  Please make sure that your route responds with a 2xx HTTP code so that it doesn't try again (otherwise it will timeout and fail).  The webhook will not retry routes that respond with 404s.
 
 Your secret key can be refreshed at any time.
 
