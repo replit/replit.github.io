@@ -11,7 +11,7 @@ file to store your secrets.
 `.env` files are used for declaring environment variables.  On Repl.it, `.env`
 files are only visible to the owner of the repl.  Other users and guests viewing
 a public repl will not be able to see the contents of the `.env` file, nor will
-they be able to access it by downloading the repl or forking it.
+they be able to access it by downloading the repl or forking it.  **The only exception to this is Multiplayer - other users in your Multiplayer session can view your `.env` files.**
 
 The syntax for these files are to list, one per line, `VARIABLE=VALUE` where
 `VARIABLE` is the name of the variable and `VALUE` is the value associated with
