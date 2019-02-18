@@ -26,7 +26,7 @@ You can add tags to your repl on your dashboard by clicking on the three dots to
 up the menu, and clicking on "Edit".  From there, you can add tags, up to a maximum of
 five, separated by commas.
 
-![](/public/images/blog/search-add-tags.png)
+![](https://replit.github.io/media/dashboard/search-add-tags.png)
 
 Tags are also visible to you only; they will not appear in your profile.
 

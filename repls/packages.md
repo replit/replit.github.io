@@ -7,7 +7,7 @@ are installed on-the-fly.
 
 On a Python or JavaScript repl, you can search for a package to install by clicking on the
 <img
-  src="https://repl.it/public/images/libraries_hover.png"
+  src="https://replit.github.io/media/misc/libraries_hover.png"
   style="height: 24px; vertical-align:text-bottom; width: 21px; margin: 0 3px; display: inline-block;"
 />
 icon on the sidebar in the workspace.  Simply search for the package you want, and select it

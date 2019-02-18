@@ -21,7 +21,7 @@ The submission workflow differ depending on the assignment "correction" type --
 whether it's manual or automatic. We currently support two automated correction
 mechanisms and one manual.
 
-![correction](/public/images/blog/correction.png)
+![correction](https://replit.github.io/media/assignment-submission/correction.png)
 
 ## Manual correction workflow
 
@@ -50,7 +50,7 @@ state and your student will then get a notification informing them.
 So to sum up here is a diagram showing the lifecycle of a submission:
 
 ![manual submission
- lifecycle](/public/images/blog/manual_submission_lifecycle.png)
+ lifecycle](https://replit.github.io/media/assignment-submission/manual_submission_lifecycle.png)
 
 ## Automatic correction workflow
 
@@ -63,7 +63,7 @@ their submission in an _awaiting help_ state.
 Here is the updated diagram:
 
 ![automatic submission
- lifecycle](/public/images/blog/automatic_submission_lifecycle.png)
+ lifecycle](https://replit.github.io/media/assignment-submission/automatic_submission_lifecycle.png)
 
 Note that at any point teachers can override the automatic behavior. For
 example, if a submission was automatically marked correct but you see something you

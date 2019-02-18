@@ -42,7 +42,7 @@ creating a file - either by clicking on the
 />
 icon. Or upload one from your computer by clicking
 <img
-  src="https://repl.it/public/images/upload_button.svg"
+  src="https://replit.github.io/media/misc/upload_button.svg"
   style="height: 24px; vertical-align:text-bottom; width: 21px; margin: 0 3px; display: inline-block;"
 /> and give it the same extension as the main file.  Once a file has been uploaded or
 added, it can be dragged into any existing folder.
