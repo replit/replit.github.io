@@ -3,7 +3,6 @@
 ## Hosting a Web Site
 
 Web Pages written in HTML, CSS, and JavaScript can be hosted on Repl.it.
-
 HTML/CSS/JS repls are hosted on Repl.it and given a unique URL that can be
 shared with your friends, family, peers, and clients.  After running a repl,
 your repl will be hosted at the URL provided in the `result` tab.

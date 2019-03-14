@@ -1,6 +1,6 @@
 # Repl.it for Public Schools
 
-Repl.it Classroom Pro is free for Public Schools.  Here is a non-exhaustive list of schools that fall under that category:
+Repl.it Classroom Pro is free for Public Schools.  Here is a non-exhaustive list of schools that fall under that category...
 
 * State funded K-12 schools
 * State funded colleges and universities

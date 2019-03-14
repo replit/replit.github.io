@@ -2,7 +2,7 @@
 
 For deploying HTTP servers, we provide templates for Ruby on Rails, Django, Node
 (Express), and Sinatra, but any framework can be used so long as the package can
-be imported.
+be imported or the port can be opened.
 
 ## Deploying an HTTP Server
 

@@ -1,5 +1,8 @@
 # Creating and Managing Classrooms
 
+This article covers creating, cloning, deleting, and archiving classrooms, as well as the effects
+of each.
+
 ## Creating a Classroom
 
 Create a classroom by going to your Teacher Dashboard via the teacher tab in your navbar.  If you do

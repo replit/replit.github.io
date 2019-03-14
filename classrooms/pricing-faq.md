@@ -1,5 +1,8 @@
 # Classroom Pricing FAQ
 
+This article contains frequently asked questions around the classroom product pricing,
+including what constitutes a student, as well as how the pricing was determined.
+
 ## What constitutes a student seat?
 
 Student counts are based on _total unique monthly active students_. That's a mouthful
