@@ -1,5 +1,7 @@
 # Copyright Claims / Takedown Requests
 
+This article contains instructions for copyright claims and takedown requests.
+
 In the case of either of the following:
 
 * You hold a copyright to content contained within a public/private repl, or a public/private classroom assignment

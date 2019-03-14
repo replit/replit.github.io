@@ -1,5 +1,7 @@
 # Classroom Webhooks
 
+Classroom webhooks unlock the metadata of your students' assignments so they can be filtered, analyzed, and organized in any way you see fit.
+
 1. [What are webhooks?](#what-are-webhooks)
 2. [How do you use webhooks?](#how-do-you-use-webhooks)
 3. [Security](#security)

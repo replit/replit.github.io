@@ -4,7 +4,7 @@
 
 The repls dashboard is the place to manage and keep track of all your repls.  Repls are
 listed in order of when they were created.  Each repl has its own three-dot menu at the
-far right.  Bringing up this menu will allow you to:
+far right.  Bringing up this menu will allow you to...
 
 * Edit the repl (change its name, description, and tags)
 * View its history

@@ -1,6 +1,6 @@
 # Markdown Shortcuts for Assignment Instructions
 
-We support markdown shortcuts when writing assignment instructions.  Specifically, we support the following shortcuts:
+We support markdown shortcuts when writing assignment instructions.  Specifically, we support the following shortcuts...
 
 1. [Headings](#headings)
 2. [Blockquotes](#blockquotes)

@@ -1,10 +1,6 @@
 # Eval Mode / Project Mode
 
-Repls currently run in one of two modes:
-* Eval Mode
-* Project Mode
-
-Each has different behaviors and limitations.
+Repls currently run in one of two modes: Eval Mode and Project Mode. Each has different behaviors and limitations. Read on to learn more about each.
 
 ## Eval Mode
 
