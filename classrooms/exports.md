@@ -1,5 +1,7 @@
 # Exporting Classroom Data
 
+Both students and teachers are capable of exporting data - teachers can export their classroom grade data, whereas students can export their assignments to repls.
+
 ## Student Exports
 
 Students can export an assignment to a repl, which can then be downloaded as a zip file, or worked on outside the classroom environment.  Students export their submissions from their classroom page, or on the submission itself.

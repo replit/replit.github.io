@@ -1,11 +1,8 @@
 # Autograding Assignments
 
 In [Repl.it Classroom](/site/classroom) you can automatically correct
-(and potentially grade) your student's assignment submissions by one of the
-following ways:
-
-* Unit tests
-* Input/output matching
+and grade your student's assignment submissions by implementing
+**Unit tests** or **Input/output matching tests**.
 
 ![](https://replit.github.io/media/autograding/correction.png)
 

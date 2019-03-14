@@ -1,10 +1,8 @@
 # Using Secret Keys
 
-Building an app that uses a service (such as an API) or connects to an external
-database usually requires a key, username, and/or password.  Since many repls are
-public, it is not advised to share these private keys, as they allow other users
-to access your services.  To that end, we provide the ability to create an `.env`
-file to store your secrets.
+Building an app that uses an external service usually requires a key or password.
+Sharing these keys (via public repls) may allow other users to access your services.
+We provide the ability to create an `.env` file to store your secrets.
 
 ## `.env` Files
 

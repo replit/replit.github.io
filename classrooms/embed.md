@@ -5,7 +5,8 @@
 **Note: Embedding via LTI is deprecated and functionality was removed at the beginning
 of September 2018.**
 
-As a teacher, to embed your classroom:
+Classroom Pro and K-12 users can embed classrooms and assignments into their respective
+LMSes via an iframe.  As a teacher, to embed your classroom...
 
 1. From your teacher dashboard, click the "three dot" menu on the classroom you want to embed.
 2. Select "Embed".

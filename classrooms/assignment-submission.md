@@ -2,9 +2,11 @@
 
 [Repl.it Classroom](/site/classroom)'s assignment and submission workflow is
 designed to make running your classroom as easy and effective as possible
-with a gentle learning curve (things should be intuitive). Similarly, the
-student workflow resembles real-world teacher/student interaction so that
-students can be productive from day 0.
+with a gentle learning curve.
+
+Similarly, the student workflow resembles
+real-world teacher/student interaction so that students can be productive
+from day 0.
 
 ![student overview](https://i.imgur.com/5N4gMNj.jpg)
 

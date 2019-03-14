@@ -2,8 +2,7 @@
 
 Replit Classroom Community is a place for empowering teachers to share content
 with each other. We've seen first-hand how the Replit teacher community likes
-to share and exchange ideas. And for us, being Open Source developers, we
-understand how this can promote innovation.
+to share and exchange ideas.
 
 You can access the Classroom Community [here](/community).
 
