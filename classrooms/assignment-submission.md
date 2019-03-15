@@ -23,7 +23,7 @@ The submission workflow differ depending on the assignment "correction" type --
 whether it's manual or automatic. We currently support two automated correction
 mechanisms and one manual.
 
-![correction](https://replit.github.io/media/assignment-submission/correction.png)
+![correction](https://replit.github.io/media/autograding/correction.png)
 
 ## Manual correction workflow
 
