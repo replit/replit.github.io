@@ -38,6 +38,10 @@
       {
         "name": "Embedding Repls",
         "slug": "embed"
+      },
+      {
+        "name": "Editor Tips and Tricks",
+        "slug": "editor"
       }
     ]
   },
