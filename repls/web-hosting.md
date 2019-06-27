@@ -12,7 +12,6 @@ After running a repl, your repl will be hosted at the URL provided in the `resul
 
 The repl will be hosted with the following URLs:
 * `https://REPL-NAME--USERNAME.repl.co`
-* `http://USERNAME.repl.co/REPL-NAME`
 * `http://REPL-NAME.USERNAME.repl.co`
 
 Where `REPL-NAME` is the name of the repl and `USERNAME` is the owner's username.
