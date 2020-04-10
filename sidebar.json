@@ -1,4 +1,22 @@
 [
+    {
+    "name": "Frequently Asked Questions",
+    "slug": "FAQ",
+    "contents": [
+      {
+        "name": "Repl Recovery",
+        "slug": "recovery"
+      },
+      {
+        "name": "Import Libraries/Packages",
+        "slug": "package"
+      },
+      {
+        "name": "Local Download",
+        "slug": "localsave"
+      }
+    ]
+  },
   {
     "name": "Repls",
     "slug": "repls",
