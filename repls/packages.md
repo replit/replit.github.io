@@ -1,6 +1,6 @@
 # Installing Packages
 
-You can use most packages available in Python, Javascript, and Ruby. Repl.it will install many packages on the fly just by importing them in code. You can read more about how we do this using [upm](https://blog.repl.it/upm).
+You can use most packages available in Python and Javascript. Repl.it will install many packages on the fly just by importing them in code. You can read more about how we do this using [upm](https://blog.repl.it/upm).
 
 ## Searching and Adding Packages
 
@@ -29,21 +29,7 @@ JavaScript:
 const express = require('express');
 ```
 
-Doing so will install the latest version of the package into your repl. A spec file and lock file will be created so the versions won't change.
-
-Ruby works a bit differently.  To import a package in Ruby, you'll have to use `bundler/inline`
-to define the gemspec within the code.  As an example, it may look like this:
-
-```ruby
-require 'bundler/inline'
-
-gemfile true do
- source 'http://rubygems.org'
- gem 'colorize'
-end
-```
-
-Wherever possible, we recommend using a file to manage dependencies.
+Doing so will install the latest version of the package into your repl. A spec file and lock file will be created so the versions won't change. Wherever possible, we recommend using a file to manage dependencies.
 
 ## Spec Files
 
@@ -51,7 +37,6 @@ Each language has a file that is used to describe the project's required package
 
 * Python: `pyproject.toml`
 * JavaScript (Node.js): `package.json`
-* Ruby: `Gemfile`
 
 ### Python
 
@@ -106,18 +91,3 @@ Note that all the packages are being installed with their latest version.  You c
 
 This will install `express` at version 4.16.3 or newer, `body-parser` at the latest version,
 and `sqlite3` at exactly version 3.1.12.
-
-### Ruby
-
-In Ruby, you can use a `Gemfile`.  In this file, you simple start with
-`source 'https://rubygems.org'` followed by the gems you want to install.  As an example,
-from our [rails boilerplate](https://repl.it/@timmy_i_chen/rails-template), a `Gemfile` may
-look like:
-
-```ruby
-source 'https://rubygems.org'
-
-gem 'rails', '~> 5.1.5'
-gem 'sqlite3'
-gem 'tzinfo-data'
-```

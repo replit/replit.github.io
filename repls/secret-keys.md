@@ -19,7 +19,7 @@ DB_PASSWORD=w0ws0secure!!
 
 ## Reading env Files
 
-Your Repl will automatically load the contents of your `.env` file into your environment so that they can be read.  Here are the ways you can access them in Python, JavaScript, and Ruby, given the following `.env` file:
+Your Repl will automatically load the contents of your `.env` file into your environment so that they can be read.  Here are the ways you can access them in Python and JavaScript, given the following `.env` file:
 
 ```
 # super secret token
@@ -41,13 +41,6 @@ print(os.getenv("DB_USERNAME"))
 ```javascript
 console.log(process.env.TOKEN)
 // prints '38zdJSDF48fKJSD4824fN'
-```
-
-### Ruby
-
-```ruby
-puts ENV["DB_PASSWORD"]
-# prints 'old_passw0rd-w00t'
 ```
 
 For security reasons, we do not recommend storing `.env` files in html repls. They'll be served to anyone who requests `/.env`.

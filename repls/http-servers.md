@@ -23,9 +23,9 @@ fork it or play around with it.
 
 <iframe height="400px" width="100%" src="https://repl.it/@timmy_i_chen/flask-boilerplate?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-We highly recommend using a `requirements.txt` file, `package.json` file, or
-`Gemfile` for Python, Node/Express, and Ruby web apps, respectively.  See our
-documentation on [libraries](/repls/packages).
+We highly recommend using `requirements.txt` or `package.json` files for
+Python and Node/Express, respectively.  See our documentation on [libraries](/repls/packages)
+for more information on dependencies.
 
 Private keys to external services or APIs can be kept in an `.env` file.
 See our documentation on [secret keys](/repls/secret-keys).
