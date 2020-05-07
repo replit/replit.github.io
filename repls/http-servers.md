@@ -18,8 +18,7 @@ as soon as it receives another request; there is no need to re-run the repl.  Ho
 if you make changes to your server, you will need to restart the repl in order to see
 those changes reflected in the live version.
 
-Below is an example of a simple HTTP server running Flask in python3.  Feel free to
-fork it or play around with it.
+Below is an example of a simple HTTP server running Flask in python3, displaying HTML from `templates/index.html`. Feel free to fork and play with the code as you'd like. 
 
 <iframe height="400px" width="100%" src="https://repl.it/@kodumbeats/flasktemplate?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
