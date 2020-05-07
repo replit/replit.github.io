@@ -23,8 +23,8 @@ fork it or play around with it.
 
 <iframe height="400px" width="100%" src="https://repl.it/@timmy_i_chen/flask-boilerplate?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-We highly recommend using `requirements.txt` or `package.json` files for Python and Node/Express, respectively.  See our
-documentation on [libraries](/repls/packages) for more information on dependencies.
+Our [package manager](https://github.com/replit/upm) will create `requirements.txt`/`package.json` files automatically in your repls.  See our
+documentation on [packages](/repls/packages) for more information on how to install and manage dependencies.
 
 Private keys to external services or APIs can be kept in an `.env` file.
 See our documentation on [secret keys](/repls/secret-keys).
