@@ -23,7 +23,7 @@ fork it or play around with it.
 
 <iframe height="400px" width="100%" src="https://repl.it/@timmy_i_chen/flask-boilerplate?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-Our [package manager](https://github.com/replit/upm) will create `requirements.txt`/`package.json` files automatically in your repls.  See our
+Our [package manager](https://github.com/replit/upm) will handle dependency files automatically in your repls.  See our
 documentation on [packages](/repls/packages) for more information on how to install and manage dependencies.
 
 Private keys to external services or APIs can be kept in an `.env` file.
