@@ -34,9 +34,9 @@ user opens the repl on Repl.it.
 
 Example: `https://repl.it/@timmy_i_chen/flask-boilerplate?lite=1&outputonly=1`
 
-## Embedding on Wordpress
+## Embedding on WordPress
 
-Wordpress supports OEmbed but can only embed content from an approved whitelist of websites. Check out the [Wordpress documentation](https://wordpress.org/support/article/embeds/#adding-support-for-an-oembed-enabled-site) for instructions to add Repl.it to the whitelist. Once Repl.it is added, a repl URL formatted as https://repl.it/@username/repltitle will automatically embed an interactive copy of the repl into your Wordpress site.
+WordPress supports OEmbed but can only embed content from an approved whitelist of websites. Check out the [WordPress documentation](https://wordpress.org/support/article/embeds/#adding-support-for-an-oembed-enabled-site) for instructions to add Repl.it to the whitelist. Once Repl.it is added, a repl URL formatted as https://repl.it/@username/repltitle will automatically embed an interactive copy of the repl into your WordPress site.
 
 ## Embedding on Medium via Embedly
 
