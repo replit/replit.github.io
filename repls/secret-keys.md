@@ -49,7 +49,7 @@ For security reasons, we do not recommend storing `.env` files in html repls. Th
 
 Here is a simple example of using `.env` in Python. You can drag out the file tree from the left to see the files, or click on the icon in the top right to open as its own page. To try it out, do the following:
 
-* Run the repl, the the secret `TOKEN` won't be printed
+* Run the repl, the secret `TOKEN` won't be printed
 * Fork it
 * Create a file called `.env` with the content `TOKEN=hello!`
 * Run the repl again, you should see `hello!` printed
