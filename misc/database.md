@@ -1,4 +1,4 @@
-# **Repl.it Database**
+# **Database**
 
 Database is a simple and easy-to-use key-value store inside of every repl.
 There is no configuration—just start using it! Here's how:
