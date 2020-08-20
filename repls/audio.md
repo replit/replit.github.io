@@ -43,49 +43,111 @@ Currently there are 2 libs already created:
 + [For python](https://pypi.org/project/replit/) (This is preinstalled in python3 repls). Please not that this might not work with python 2.
 + [For js/ts](https://github.com/replit/audio-js)
 
-To make this as light as possible on your repl's resources, audio files are played via a request system.  To make a request, simply write to `/tmp/audio`. Valid source creation requests are formatted as shown below:
+To make this as light as possible on your repl's resources, audio files are played via a request system.  To make a request, simply write to `/tmp/audio`. 
 
-```js
+An example request might look like:
+```json
 {
-	"File": "/path/to/file", // The path to the audio file
-	"Volume": 1.5, // A float64 value to determine audio volume.  1 is the file's native volume. Defaults to 1.
-	"DoesLoop": false, // Whether the file should be repeated or not.
-	"LoopCount": -1 // How many times to repeat the file.  Set to a negative value to create an endless loop.
+  "Paused": false,
+  "Name": "My tone",
+  "Type": "tone",
+  "Volume": 1,
+  "DoesLoop": false,
+  "LoopCount": 0,
+  "Args": {
+    "Pitch": 400,
+    "Seconds": 5,
+    "Type": 1,
+    "Path": ""
+  }
 }
 ```
 
-## Step Two:  Reading the data of currently played audio
 
-Each file source, formatted in json is formatted like so:
+What these fields mean:
++ `Paused` - Whether the source is paused or not - this can only be set when updating the source.
++ `Name` - the name of the source - this can be used to identify the source when it's being created - if it's not set the name will be set by pid1.
++ `Type` - the type of the source, current supported types are:
+    + `wav` - A `.wav` file
+    + `aiff` - A `.aiff` file 
+    + `mp3` - A `.mp3` file
+    + `tone` - A generated tone.
++ `Volume` - The volume of the source as a floating point number - `1` would be `100`%
++ `DoesLoop` - Whether the source should loop or not - if true `LoopCount` should be set.
++ `LoopCount` - How many times the source should loop - if set to `1` the source will restart `1`x once its done playing, if set to a negative value it will loop forever. Will be ignored if `DoesLoop` is not true.
++ `Args` - Additional arguments that aren’t used by every source type. 
+	+ `Path` (used by `aiff`, `wav`, and `mp3` types) - The path to the file. This can be relative or absolute. (relative to the workspace’s root*)
+	+ `Pitch` (used for the `tone` type) - The frequency / pitch of the tone.
+	+ `Type` (Used for the `tone` type) - The wave type of the generated tone - Valid values are:
+		+ `0` - The sine wave type
+		+ `1` - The triangle wave type
+		+ `2` - The saw wave type
+		+ `3` - The sqr wave type
 
-```js
+
+## Step 2: Getting the status of playing audio.
+
+An example status for audio is shown below.
+
+```json
 {
-	"Name": "file/name", // The path to the file.
-	"FileType": "wav/aiff", // The type of the file.
-	"Volume": 1.5, // The provided volume.
-	"Duration": 123, // The estimated duration of the file in milliseconds.
-	"Remaining": 122, // The estimated time remaining in milliseconds.
-	"Paused": false,
-	"Loop": 0, // How many more times the source will repeat.
-	// Negative values are constant and mean that it will repeat an infinite amount.
-	"ID": 1, // The ID of the source.
-	"EndTime": "2020-04-23T22:30:46.486250072Z", // Estimated time for the file to be done playing.
-	"StartTime": "2020-04-23T22:30:46.486250072Z" // When the file started playing. 
+  "Sources": [
+    {
+      "Name": "1",
+      "Type": "tone",
+      "Volume": 1,
+      "Duration": 2000,
+      "Remaining": 1995,
+      "Paused": false,
+      "Loop": 0,
+      "ID": 1,
+      "EndTime": "2020-08-20T18:15:27.763933471Z",
+      "StartTime": "2020-08-20T18:15:25.763933471Z",
+      "Request": {
+        "ID": 0,
+        "Paused": false,
+        "Name": "1",
+        "Type": "tone",
+        "Volume": 1,
+        "DoesLoop": false,
+        "LoopCount": 1,
+        "Args": {
+          "Pitch": 400,
+          "Seconds": 2,
+          "Type": 1
+        }
+      }
+    }
+  ],
+  "Disabled": false,
+  "Running": true
 }
 ```
+
+What this is:
++ `Sources` - A list of playing sources.
+    + `Name` - The name of the source
+    + `Type` - The type of the source (types documented above) 
+    + `Volume` - The volume of the source (`float64`)
+    + `Duration` - The (estimated) duration of the source (in milliseconds) (`int64`)
+    + `Remaining` - The (estimated) time remaining for the source (in milliseconds) (`int64`)
+    + `Paused` - Whether the source is paused or not (`bool`)
+    + `Loop` - How many times the source will play itself again. Negative values are infinite. (`int64`)
+    + `ID` - The ID of the source used for updating it. (`int64`)
+    + `EndTime` - The estimated time when the source will be done playing.
+    + `StartTime` - When the source started playing.
+    + `Request` - The request used to create the source. (documented above) 
++ `Disabled` - Whether the pid1 audio player is disabled or not - useful for debugging.
++ `Running` - Whether pid1 is sending audio or not - useful for debugging.
+
+Note: estimated end time is based on the current loop, and does not factor in the fact that the source may repeat itself.
+
+
 Note: Timestamps are formatted like so: `yyyy-MM-dd'T'HH:mm:ssZ`
 
 
 In order to read the data from the sources, you need to read `/tmp/audioStatus.json`.
 The file is formatted as shown below:
-
-```js
-{
-	"Sources": [], // A list of sources, formatted as above.
-	"Running": false, // Whether or not anything is playing. true means sources are being played.
-	"Disabled": false, // Whether or not the sound program is running. Should only be true if the repl is stopped.
-}
-```
 
 Note: After a source finishes playing it is removed from the known sources.
 
@@ -99,8 +161,8 @@ Edit requests are formatted as shown below:
 {
 	"ID": 1, // The id of the source
 	"Volume": 1, // The volume for the source to be played at
-	"Paused": false, // Wether the file is paused or not.
-	"DoesLoop": false, // Wether the file should be repeated or not.
+	"Paused": false, // Whether the file is paused or not.
+	"DoesLoop": false, // Whether the file should be repeated or not.
 	"LoopCount": -1 // How many times to repeat the file.  Set to a negative value to create an endless loop.
 }
 ```
