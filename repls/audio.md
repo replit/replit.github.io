@@ -31,19 +31,20 @@ Since we know not everyone uses python or js, we decided to document how to make
 ## Step One: Add an audio source
 
 
-Currently, supported file types are `.wav` and `.aiff`.
+Currently, supported file types are `.wav`, `.aiff`, and `.mp3` files.
 
 Files are played in mono / single channel mode, files with multiple channels will be read and converted into single channel data.
 
 If you have an mp3 file, you can find an online converter such as [this one](https://onlineaudioconverter.com/#).
 
-Note that **files MUST BE at 44,100 hertz, or 44.1khz**. If your file is not at 44,100 hertz you can convert it [here](https://onlineaudioconverter.com/#). Note that it will still be played if its not at 44,100hertz, although it will be played as if it was 44,100hertz. For example, if your file is at 22,050 hertz it will be played at 2x speed.
-
 Currently there are 2 libs already created:
 + [For python](https://pypi.org/project/replit/) (This is preinstalled in python3 repls). Please not that this might not work with python 2.
 + [For js/ts](https://github.com/replit/audio-js)
 
-To make this as light as possible on your repl's resources, audio files are played via a request system.  To make a request, simply write to `/tmp/audio`. 
+Community contributed libraries:
++ [For rust](https://github.com/Daniel-Liu-c0deb0t/replit_audio)
+
+To make this as light as possible on your repl's resources, audio files are played via a request system.  To make a request, simply write to a named pype,  `/tmp/audio`. 
 
 An example request might look like:
 ```json
@@ -194,3 +195,5 @@ def update_source(id, **changes):
 ```
 
 There is also a simple demo created in python available [here](https://repl.it/@AllAwesome497/Audio-Demo)
+
+
