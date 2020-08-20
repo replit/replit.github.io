@@ -12,21 +12,26 @@ To make it as easier for users, we based audio on a request system. This means t
 
 Another builtin feature is the ability for users to play as many files as they would like.
 
-Supported files are `.wav` and `.aiff` files (detailed more later). 
+Supported files are `.wav`, `.aiff`, and `.mp3` files (detailed more later). 
 
-Currently, we have javascript and python libraries for audio,
+Currently, we have javascript and python libraries for audio.
 
-An example of use with the js lib is shown below, and generated docs can be found [here](https://audio-js-docs--allawesome497.repl.co/).
+An example of the js library is shown below, and generated docs can be found [here](https://audio-js-docs--allawesome497.repl.co/).
 
 <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@turbio/audio-js-demo?lite=true"></iframe>
 
-As for an example using the python library is shown below, and some documentation can be found [here](https://pypi.org/project/replit/).
+An example using the python library is shown below. Generated docs can be found with the python replit package documented [here](https://replit-docs-python.allawesome497.repl.co/).
 
 <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@AllAwesome497/py-audio-demo?lite=true"></iframe>
 
+## Community contributed libraries
+
++ [For rust](https://github.com/Daniel-Liu-c0deb0t/replit_audio)
+
+
 # Developing an audio library for repl.it
 
-Since we know not everyone uses python or js, we decided to document how to make a lib.
+Since not everyone uses python or js, we decided to document how to make a library.
 
 ## Step One: Add an audio source
 
@@ -35,16 +40,7 @@ Currently, supported file types are `.wav`, `.aiff`, and `.mp3` files.
 
 Files are played in mono / single channel mode, files with multiple channels will be read and converted into single channel data.
 
-If you have an mp3 file, you can find an online converter such as [this one](https://onlineaudioconverter.com/#).
-
-Currently there are 2 libs already created:
-+ [For python](https://pypi.org/project/replit/) (This is preinstalled in python3 repls). Please not that this might not work with python 2.
-+ [For js/ts](https://github.com/replit/audio-js)
-
-Community contributed libraries:
-+ [For rust](https://github.com/Daniel-Liu-c0deb0t/replit_audio)
-
-To make this as light as possible on your repl's resources, audio files are played via a request system.  To make a request, simply write to a named pype,  `/tmp/audio`. 
+To make this as light as possible on your repl's resources, audio files are played via a request system.  To make a request, simply write to a named pype, `/tmp/audio`. 
 
 An example request might look like:
 ```json
