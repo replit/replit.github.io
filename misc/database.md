@@ -116,4 +116,4 @@ they are not shared among repls.
 The easiest way to do this is to use one repl as the primary database and have other repls connect to it via web hosting. Here’s an example repl in Python: https://repl.it/@util/Replit-Database-proxy
 
 Any requests sent to the above repl will operate on its database, so sending
-requests to it from other repls means they all share the same information.
+requests to it from other repls means that they all share the same information.
