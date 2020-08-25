@@ -65,7 +65,7 @@ Now that we understand what our function should do, we can write tests to check 
 from namesplitter.utils import name_helper
 
 def test_two_names():
-    assert split_name("John Smith") == ["John", "Smith"]
+    assert name_helper.split_name("John Smith") == ["John", "Smith"]
 ```
 Note that the `namesplitter` in the first line is taken from the name of your Repl.it project, which defines the names of the parent module. If you called your project something else, you'll need to use that name in the import line. It's important to not include special characters in the project name (including a hyphen, so names like `my-tdd-demo` are out) or the import won't work.
 
