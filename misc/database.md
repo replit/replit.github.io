@@ -8,7 +8,7 @@ There is no configuration—just start using it! Here's how:
 When viewing your repl, you'll see the Database icon toward the bottom of the sidebar.
 That’s Repl.it’s new key-value database, built right into your repl!
 
-#### **How can I access my databse?**
+#### **How can I access my database?**
 
 To access Database, you can use a library or simple curl commands.
 
@@ -53,7 +53,13 @@ Delete returns status code 204 if the key was deleted or 404 if the key did not 
 ##### List
 
 ```
-curl $REPLIT_DB_URL --get -d 'prefix=<key> or curl "$REPLIT_DB_URL?prefix=<key>"
+curl $REPLIT_DB_URL --get -d 'prefix=<key>'
+```
+
+or
+
+```
+curl "$REPLIT_DB_URL?prefix=<key>"
 ```
 
 The returned keys will be separated by newlines.
@@ -104,3 +110,7 @@ the total storage occupied by your keys and values.
 
 Yes, each Database is private and isolated. Every repl has its own database, and
 they are not shared among repls.
+
+#### How do I share a database across repls?
+
+The easiest way to do this is to use one repl as the primary database and have other repls connect to it via web hosting. Here’s an example repl in Python: https://repl.it/@util/Replit-Database-proxy
