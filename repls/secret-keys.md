@@ -1,6 +1,6 @@
 # Storing secrets in .env
 
-Building an app that uses an external service usually requires a key or password. Sharing these keys (via public repls) may allow other users to access your services. We provide the ability to create an `.env` file to to safely store your secrets. This allows you to safely share your code with anyone while keeping your keys secret.
+Building an app that uses an external service usually requires a key or password. Sharing these keys (via public repls) may allow other users to access your services. We provide the ability to create an `.env` file to safely store your secrets. This allows you to safely share your code with anyone while keeping your keys secret.
 
 ## `.env` Files
 
