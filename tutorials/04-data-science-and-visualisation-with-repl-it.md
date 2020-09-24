@@ -5,7 +5,7 @@ So far, all the programs we have looked at have been entirely **text based**. Th
 While text is flexible and powerful, sometimes a picture is worth a thousand words. Especially when analysing data, you'll often want to produce plots and graphs. There are three main ways of achieving this using Repl.it.
 
 1. Creating a front-end only project and using only JavaScript, HTML and CSS.
-2. Creating a full web application with something like [Flask](https://https://flask.palletsprojects.com/), analysing the data in Python and passing the results to a front end to be visualised.
+2. Creating a full web application with something like [Flask](https://flask.palletsprojects.com/), analysing the data in Python and passing the results to a front end to be visualised.
 3. Using Python code only, creating windows using [X](https://en.wikipedia.org/wiki/X_Window_System) and rendering the plots in there.
 
 Option 1 is great if you're OK with your users having access to all of your data, you like doing data manipulation in JavaScript, and your data set is small enough to load into a web browser. Option 2 is often the most powerful, but can be overkill if you just want a few basic plots.
