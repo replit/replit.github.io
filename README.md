@@ -11,6 +11,8 @@ node index.js
 
 and then visiting http://localhost:3000 in your browser.
 
+You can also run the docs on Repl.it: [![Run on Repl.it](https://repl.it/badge/github/replit/replit.github.io)](https://repl.it/github/replit/replit.github.io)
+
 # Contributing
 
 If you'd like to contribute please [fork this repl](https://docs.repl.it/__repl), then share your fork in an issue on the [github repo](https://github.com/replit/replit.github.io/). You can also submit a pull request to the same github repo.
