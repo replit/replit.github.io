@@ -16,16 +16,18 @@ If you'd like to embed specific code then do the following:
 
 Here is an example:
 
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@amasad/PitifulLastingWhoopingcrane?lite=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@amasad/PitifulLastingWhoopingcrane?embed=true"></iframe>
 
 And the html snippet for this:
 
 ```html
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@amasad/PitifulLastingWhoopingcrane?lite=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@amasad/PitifulLastingWhoopingcrane?embed=true"></iframe>
 ```
 
 You can also manually embed repls by using your own custom `iframe` tags.
-These repls must have `?lite=true` as a query parameter to be embedded.  The
+These repls must have `?embed=true` as a query parameter to be embedded.
+
+As an alternative, you can also use `?lite=true` to embed your repl in the social view. The
 following options are also supported:
 
 * `outputonly=1`: Include this as a query parameter if you want to hide the
@@ -33,6 +35,8 @@ editor in the embed.  Please note that the code is still accessible if the
 user opens the repl on Repl.it.
 
 Example: `https://repl.it/@timmy_i_chen/flask-boilerplate?lite=1&outputonly=1`
+
+> Do note that `1` and `true` are interchangable while setting embed options.
 
 ## Embedding on WordPress
 
