@@ -16,10 +16,10 @@ A comment box will pop up towards the right of the code. Type in a comment and p
 
 The student who created the repl will receive an in-app notification as well as an email with your comment. They'll be able to reply to the comment or modify the code accordingly.
 
-You can also use familiar markdown syntax in [annotations](https://blog.repl.it/annotations-for-education) and chat.
+You can also use familiar markdown syntax in [annotations](https://blog.replit.com/annotations-for-education) and chat.
 
 Here's a quick guide:
 
-<img src="https://blog.repl.it/images/annotations/annotations-formatting-2.png" alt="Markdown syntax in Annotations" width="100"/>
+<img src="https://blog.replit.com/images/annotations/annotations-formatting-2.png" alt="Markdown syntax in Annotations" width="100"/>
 
 
