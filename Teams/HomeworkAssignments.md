@@ -22,14 +22,14 @@ This guide shows you how to get started with teaching your kid to code, showing 
 
 These are some examples that you can fork directly. They contain example starter code, model answers, and example instructions for your students.
 
-### [Harry Potter game with Python Play](https://repl.it/@ritza/PlayPotterGame)
+### [Harry Potter game with Python Play](https://replit.com/@ritza/PlayPotterGame)
 
 This is a clone of the above but written in Python Play, our simple GUI library built on top of PyGame.
 
-### [Harry Potter game with PyGame]( https://repl.it/@ritza/PotterGame)
+### [Harry Potter game with PyGame]( https://replit.com/@ritza/PotterGame)
 
 A basic game where the player can use their keyboard to move Harry and catch the snitch.
 
-### [Python Shopping List](https://repl.it/@ritza/ShoppingList)
+### [Python Shopping List](https://replit.com/@ritza/ShoppingList)
 
 A command-line app which demonstrates Python classes, input, output, and string manipulation.
