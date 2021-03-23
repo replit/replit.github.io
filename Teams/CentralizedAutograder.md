@@ -10,7 +10,7 @@ In this guide, we'll show you how to take it a step further and build a centrali
 
 This guide shows you how to build the solution step-by-step. If you just want to get it up and running as quickly as possible, you can follow the [quickstart guide](./CentralizedAutograderQuickstart) instead which shows you how to get started from our template repls.
 
-Note that you'll need a subscription to [Teams for Education](https://repl.it/teams) to follow this guide as it is presented, but you should also be able to adapt it to run using a normal Repl.it account if you need.
+Note that you'll need a subscription to [Teams for Education](https://replit.com/teams) to follow this guide as it is presented, but you should also be able to adapt it to run using a normal Repl.it account if you need.
 
 We assume that your students are learning Python. We'll give an example Python assignment and an example testing suite using [PyTest](https://docs.pytest.org/en/stable/). We'll use [Flask](https://flask.palletsprojects.com) to create the centralised grading server.
 
