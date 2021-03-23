@@ -1,6 +1,6 @@
 # Teams for Education
 
-[Teams for Education](https://repl.it/teams-for-education) adds key workflows for students and teachers on top of all the core Replit features. In this article, you'll learn how to sign up for a team and get started.
+[Teams for Education](https://replit.com/teams-for-education) adds key workflows for students and teachers on top of all the core Replit features. In this article, you'll learn how to sign up for a team and get started.
 
 ## Creating a Team
 
@@ -8,7 +8,7 @@ A team is a collection of teachers (with admin privileges) and students. The pla
 
 ### Signing up
 
-If you don't already have an account, sign up at [repl.it](https://repl.it). Now click on [Teams](https://repl.it/teams) in the sidebar on the left and choose the "Education" plan.
+If you don't already have an account, sign up at [replit.com](https://replit.com). Now click on [Teams](https://replit.com/teams) in the sidebar on the left and choose the "Education" plan.
 
 ![](https://i.ritzastatic.com/images/d0ec5bfad4d24b299236083894aaec25/choose-plan.png)
 
