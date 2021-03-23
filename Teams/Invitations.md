@@ -2,7 +2,7 @@
 
 Follow the steps during team creation to invite people with their Repl.it username or email addresses.
 
-If you've already created a team, navigate to your [team dashboard](https://repl.it/teams) and click "Manage team members" in the header.
+If you've already created a team, navigate to your [team dashboard](https://replit.com/teams) and click "Manage team members" in the header.
 
 <img style="width: 300px" src="/images/teamsForEducation/manageTeamMembers.png" />
 
