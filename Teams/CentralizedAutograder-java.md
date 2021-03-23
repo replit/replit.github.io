@@ -10,7 +10,7 @@ In this guide, we'll show you how to take it a step further and build a centrali
 
 This guide shows you how to build the solution step-by-step. If you just want to get it up and running as quickly as possible, you can follow the [quickstart guide](./CentralizedAutograderQuickstart-java) instead which shows you how to get started from our project repls.
 
-Note that you'll need a subscription to [Teams for Education](https://repl.it/teams) to follow this guide as it is presented, but you should also be able to adapt it to run using a normal Repl.it account if you need.
+Note that you'll need a subscription to [Teams for Education](https://replit.com/teams) to follow this guide as it is presented, but you should also be able to adapt it to run using a normal Repl.it account if you need.
 
 We assume that your students are learning Java. We'll give an example Java assignment and an example testing suite using [JUnit 5](https://junit.org/junit5/docs/current/user-guide/). We'll use [Javalin](https://javalin.io/documentation) to create the centralised grading server.
 
