@@ -27,4 +27,4 @@ The Replit application is delivered over the following protocols:
 
 **Data Retention and Usage**
 
-Please refer to our [Privacy FAQs](https://docs.repl.it/Teams/privacyFAQs) and [U.S. Student Data Protection Addendum](https://docs.repl.it/Teams/US_Student_DPA) for more details.
+Please refer to our [Privacy FAQs](https://docs.replit.com/Teams/privacyFAQs) and [U.S. Student Data Protection Addendum](https://docs.replit.com/Teams/US_Student_DPA) for more details.
