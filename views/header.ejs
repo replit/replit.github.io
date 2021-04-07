@@ -1,175 +1,95 @@
 <style>
-  .left-links.jsx-3411775297 {
-  position: absolute;
-  left: 155px;
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    flex: 1;
+    width: 100%;
+    padding: 16px 0;
   }
-  .right-links.jsx-3411775297 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+
+  .navigation-container {
+    display: flex;
+    align-items: center;
   }
-  .nav-hamburger.jsx-3411775297 {
-  display: none;
-  cursor: pointer;
+
+  .navigation-links {
+    text-decoration: none;
+    padding: 4px 8px 8px 8px;
+    margin: 4px;
+    color: black;
+    transition: 0.2s color ease-in-out;
   }
-  .nav-mobile-shown.jsx-3411775297,
-  .nav-mobile.jsx-3411775297 {
-  display: none;
+
+  .navigation-links:hover {
+    color: #0070e0;
   }
-  .nav.jsx-3411775297 {
-  font-family: 'Questrial', sans-serif;
-  position: absolute;
-  right: 0;
-  left: 0;
+
+  .navigation .sign-up {
+    margin: 0 0 4px 12px;
+    padding: 8px 16px;
+    background-color: #0070e0;
+    border-radius: 4px;
+
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s opacity ease-in-out;
   }
-  .nav.jsx-3411775297 .nav-link.jsx-3411775297 {
-  margin-right: 15px;
-  color: #767777;
-  height: 60px;
-  line-height: 60px;
-  display: inline-block;
-  padding-top: 3px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+
+  .navigation .sign-up:hover {
+    opacity: 0.9;
   }
-  .nav.jsx-3411775297 .nav-link.jsx-3411775297:hover,
-  .nav.jsx-3411775297 .nav-auth-button.jsx-3411775297:hover {
-  color: #7896a3;
-  border-bottom: 1px solid #7896a3;
+
+  .navigation-container img {
+    margin: 0 12px;
+    width: 110px;
   }
-  .nav.jsx-3411775297 .nav-auth-button.jsx-3411775297 {
-  margin: 0 18px;
-  color: #767777;
-  height: 60px;
-  display: inline-block;
-  line-height: 60px;
-  border-bottom: 1px solid #767777;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  }
-  .nav.jsx-3411775297 .signup-form .btn-primary,
-  .nav.jsx-3411775297 .login-form .btn-primary {
-  background-color: #F06A60 !important;
-  }
-  .nav.jsx-3411775297 .signup-form .btn-primary:hover,
-  .nav.jsx-3411775297 .login-form .btn-primary:hover {
-  background-color: #F1584B !important;
-  }
-  @media all and (max-width:720px) {
-  
-  .nav-hamburger.jsx-3411775297 {
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  font-size: 30px;
-  display: none;
-  position: absolute;
-  right: 0;
-  color: #767777;
-  text-align: center;
-  }
-  .nav.jsx-3411775297 {
-  display: none;
-  }
-  .nav-mobile-shown.jsx-3411775297 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: absolute;
-  top: 59px;
-  right: 0;
-  width: 150px;
-  background: #fff;
-  text-align: center;
-  border: 1px solid #ececec;
-  border-top: none;
-  }
-  .nav-link-mobile.jsx-3411775297 {
-  font-family: 'Questrial', sans-serif;
-  color: #767777;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  padding: 10px;
-  }
-  .nav-link-mobile.jsx-3411775297:hover {
-  font-family: 'Questrial', sans-serif;
-  background-color: rgb(245, 245, 245);
-  }
+
+  @media all and (max-width: 800px) {
+    .navigation {
+      padding: 16px 0;
+      margin: 24px auto 0 auto;
+    }
+
+    .navigation img {
+      margin: 0;
+    }
+
+    .navigation-links {
+      display: none;
+    }
+
+    .navigation .sign-up {
+      margin: 0;
+    }
   }
 </style>
-<style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-  html,
-  body {
-  min-height: 100%;
-  }
-  body {
-  margin-top: 60px;
-  }
-  button {
-  border-radius: 0;
-  }
-  a {
-  color: #4183c4;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  }
-  a:hover,
-  a:active,
-  a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  }
-  header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  height: 60px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid #ececec;
-  }
-  header .logo {
-  position: absolute;
-  left: 25px;
-  height: 60px;
-  line-height: 94px;
-  }
-  header .logo img {
-  width: 116px;
-  }
-</style>
-  <header style="background:;border-bottom:">
-    <div style="position:relative">
-      <a class="logo" href="//repl.it"><img src="//repl.it/public/images/logo-small.png" alt="repl.it"/></a>
-      <div class="jsx-3411775297">
-        <div class="jsx-3411775297 nav-hamburger">&#9776;</div>
-        <nav class="jsx-3411775297 nav-mobile"><a href="//repl.it/signup" class="jsx-3411775297 nav-link-mobile">sign up</a><a href="//repl.it/site/jobs" class="jsx-3411775297 nav-link-mobile">jobs</a><a href="//repl.it/site/blog" class="jsx-3411775297 nav-link-mobile">blog</a><a href="//repl.it/site/ide" class="jsx-3411775297 nav-link-mobile">features</a><a href="//repl.it/jam?from=static" class="jsx-3411775297 nav-link-mobile">challenge</a></nav>
-        <nav class="jsx-3411775297 nav">
-          <div class="jsx-3411775297 left-links"><a href="//repl.it/site/jobs" class="jsx-3411775297 nav-link">jobs</a><a href="//repl.it/site/blog" class="jsx-3411775297 nav-link">blog</a><a href="//repl.it/site/features" class="jsx-3411775297 nav-link">features</a><a href="//repl.it/jam?from=static" class="jsx-3411775297 nav-link">challenge</a></div>
-          <div class="jsx-3411775297 right-links"><a href="//repl.it/signup" class="jsx-3411775297 nav-auth-button">Sign Up</a></div>
-        </nav>
+
+<nav class="navigation">
+  <div class="navigation-container">
+    <a class="logo" href="//replit.com"
+      ><img src="//replit.com/public/images/logo-small.png" alt="Replit"
+    /></a>
+
+    <a class="navigation-links" href="//replit.com/site/ide">Features</a>
+    <a class="navigation-links" href="//replit.com/site/jobs">Jobs</a>
+    <a class="navigation-links" href="//blog.replit.com">Blog</a>
+    <a class="navigation-links" href="//replit.com/jam?from=static">Jam</a>
+
+    <div class="search" data-search>
+      <input
+        class="search_input"
+        placeholder="Search docs..."
+        data-search="source"
+        disabled
+      />
+      <div class="search_output">
+        <div class="search_preview" data-search="output"></div>
       </div>
     </div>
-  </header>
+  </div>
+
+  <a class="sign-up" href="//replit.com/signup">Sign up</a>
+</nav>

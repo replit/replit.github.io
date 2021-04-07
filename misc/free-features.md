@@ -11,25 +11,25 @@ Here, we'll show you how to take advantage of our free features.  Everything sho
 
 ## Repls
 
-Repls are the core of the Repl.it service, and they will always be available for all users.  You can create as many repls as you like, and in any language.  Start by logging into your account (or [signing up for a free account](https://repl.it/signup)).
+Repls are the core of the Repl.it service, and they will always be available for all users. You can create as many repls as you like, and in any language. Start by logging into your account (or [signing up for a free account](https://repl.it/signup)).
 
-You can access your repls and create new ones in the "my repls" view, found at the top of your page once logged in.
+You can access your repls and create new ones in the "My Repls" view, found at the top of your page once logged in.
 
-You can create a new repl on this page by clicking on the big green button.  You'll be prompted to choose a language - pick any language you like by typing a name in the search, or by browsing the available languages by category.
+You can create a new repl on this page by clicking on the big green button. You'll be prompted to choose a language - pick any language you like by typing a name in the search, or by browsing the available languages by category.
 
-Once you've selected a language, you'll be greeted with your IDE - Integrated Development Environment.  Click on the pencil icon[0] next to the repl name to edit the name and description of the repl.  Repls belonging to free accounts are public.
+Once you've selected a language, you'll be greeted with your IDE - Integrated Development Environment. Click on the pencil icon[0] next to the repl name to edit the name and description of the repl. Repls belonging to free accounts are public.
 
 Learn more on how to leverage the full power of repls [here](https://docs.repl.it/tutorials/01-introduction-to-the-repl-it-ide).
 
 ## Multiplayer
 
-Repl.it is the first fully multiplayer programming environment. Meaning you can invite other people to code and collaborate with you. You can use that to pair program with others, teach your classroom, create collaborative projects for your students, or simply present your work to others. 
+Repl.it is the first fully multiplayer programming environment, meaning you can invite other people to code and collaborate with you. You can use that to pair program with others, teach your classroom, create collaborative projects for your students, or simply present your work to others. 
 
 Learn more about multiplayer [here](https://docs.repl.it/tutorials/05-pair-programming-using-multiplayer-with-repl-it)
 
 ## Teams
 
-While teams is not necessary to teach, learn, or collaborate on Repl.it, it can be easier to use when working with others because it allows you to share all your repls and folders by default. 
+While Teams is not necessary for teaching, learning, or collaboration on Repl.it, it can make it easier to work with others because it allows you to share all your repls and folders by default. 
 
 Teams has a free version that allows for up to 10 collaborators. Learn more about Teams for Education [here](https://docs.repl.it/classrooms/teams_for_education).
 
@@ -37,18 +37,6 @@ Teams has a free version that allows for up to 10 collaborators. Learn more abou
 
 We take user privacy very seriously and only collect data insofar as it's important to provide our service (you can read more about our [privacy policy](https://repl.it/site/privacy)).
 
-As a small team we're unable to comply with the various ed-tech regulations around the world. However, you can use Repl.it completely anonymously without providing any identifiable information - choose a language from our [languages page](https://repl.it/languages) and start coding.
+As a small, team we're unable to comply with the various ed-tech regulations around the world. However, you can use Repl.it completely anonymously without providing any identifiable information - choose a language from our [languages page](https://repl.it/languages) and start coding.
 
 If you're teacher, one anonymous workflow you can use is to create a repl with the instructions and starter code, and then have your students fork the repl, work on the assignment, and send the link back.
-
-## Community Classrooms
-
-Public classrooms show up under the Community tab at the top of the page.  These are classrooms created by other Repl.it users.
-
-![screenshot of community classrooms](https://replit.github.io/media/free-features/community-classrooms.png)
-
-By clicking on a classroom, you can either "Take and Learn", or "Import and Teach".  Clicking on "Take and Learn" will add you as a student to that classroom, where you can work through their exercises.  The original creator will not be able to see your submissions, although these classrooms are typically auto-graded through input/output or unit testing.
-
-Clicking on "Import and Teach" will clone the classroom into your account, which you can then edit and re-use to teach other students!  Free accounts can have up to 200 students per account - past that, please check out our [pricing options](https://repl.it/site/pricing) to see what's most suitable for you.
-
-Even with a free account, you can take as many classes as you want.  Try it out!

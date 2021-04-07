@@ -4,6 +4,8 @@
 - A 50x50 pixel display for graphics and games
 - A console for input/output
 
+[Start here](https://repl.it/languages/basic).
+
 ![basic environment](/images/basic.png)
 
 ## Syntax

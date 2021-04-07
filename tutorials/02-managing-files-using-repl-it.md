@@ -10,7 +10,7 @@ Repl.it also offers functionality to mass import or export files from or to the 
 
 Create a new Python repl and call it `working-with-files`.
 
-![**Image 1:** Creating our files project](https://www.codewithrepl.it/img/02-working-with-files.png)
+![**Image 1:** Creating our files project](/images/tutorials/02-managing-files/02-01-new-repl.png)
 
 As before, you'll get a default repl project with a `main.py` file. We need a data file to practise reading data programmatically.
 
@@ -20,7 +20,7 @@ As before, you'll get a default repl project with a `main.py` file. We need a da
 
 You should now have something similar to what you see below.
 
-![**Image 2:** Adding data manually to our text file](https://www.codewithrepl.it/img/02-creating-a-data-file.png)
+![**Image 2:** Adding data manually to our text file](/images/tutorials/02-managing-files/02-02-mydata-txt.png)
 
 Go back to the `main.py` file and add the following code.
 
@@ -35,7 +35,7 @@ This opens the file programmatically, reads the data in the file into a variable
 
 Press the `Run` button. If everything went well, you should see output as shown in the image below.
 
-![**Image 3:** Reading data from a file and printing it out](https://www.codewithrepl.it/img/02-reading-from-file.png)
+![**Image 3:** Reading data from a file and printing it out](/images/tutorials/02-managing-files/02-03-read-file.png)
 
 ## Creating files using Python
 
@@ -51,7 +51,7 @@ Note the `w` argument that we pass into the `open` function now. This means that
 
 Run the code again and you should see a new file pop up in the files pane. If you click on the file, you'll find the data that the Python script wrote to it, as shown below.
 
-![**Image 4:** Writing data to a file and viewing it](https://www.codewithrepl.it/img/02-created-file.png)
+![**Image 4:** Writing data to a file and viewing it](/images/tutorials/02-managing-files/02-04-write-file.png)
 
 ## Building a weather logging system using Python and Repl.it
 
@@ -67,7 +67,7 @@ We'll get weather data from the WeatherStack API. You'll need to sign up at [wea
 
 After sign-up, you should see a page similar to the following containing the API access key.
 
-![**Image 5:** *Getting an API key from WeatherStack*](https://www.codewithrepl.it/img/02-weather-stack-quickstart.png)
+![**Image 5:** *Getting an API key from WeatherStack*](/images/tutorials/02-managing-files/02-05-weatherstack-api.png)
 
 You should keep this key secret to stop other people using up all of your monthly calls.
 
@@ -96,7 +96,7 @@ print()
 
 This code asks WeatherStack for the current temperature in London, gets the [JSON](https://www.w3schools.com/js/js_json_intro.asp) version of this and prints it out. You should see something similar to what is shown below.
 
-![**Image 6:** *Getting the current weather in JSON format*](https://www.codewithrepl.it/img/02-json-weather-data.png)
+![**Image 6:** *Getting the current weather in JSON format*](/images/tutorials/02-managing-files/02-06-get-request.png)
 
 WeatherStack returns a lot of data, but we are mainly interested in
 
@@ -117,7 +117,7 @@ print(f"The temperature in {city}, {country} on {date} is {temperature} degrees 
 
 If you run the code again, you'll see a more human-friendly output, as shown below.
 
-![**Image 7:** *Seeing a human-readable summary of the data*](https://www.codewithrepl.it/img/02-human-weather-output.png)
+![**Image 7:** *Seeing a human-readable summary of the data*](/images/tutorials/02-managing-files/02-07-foramat-output.png)
 
 This is great for getting the current weather, but now we want to extend it a bit to record weather historically.
 
@@ -125,7 +125,7 @@ We'll create a file called `cities.txt` containing the list of cities we want to
 
 Add the `cities.txt` file, as in the image below (of course, you can change which cities you would like to get weather info for).
 
-![**Image 8:** *Creating the cities.txt file*](https://www.codewithrepl.it/img/02-creating-cities.png)
+![**Image 8:** *Creating the cities.txt file*](/images/tutorials/02-managing-files/02-08-add-cities.png)
 
 Now remove the code we currently have in `main.py` and replace it with the following.
 
@@ -163,11 +163,11 @@ In our previous examples we explicitly closed files using `f.close()`. In this e
 
 If you run this code, you'll see it creates one file for each city.
 
-![**Image 9:** *The script creates one file for each city*](https://www.codewithrepl.it/img/02-city-files.png)
+![**Image 9:** *The script creates one file for each city*](/images/tutorials/02-managing-files/02-09-all-cities.png)
 
 If you open up one of the files, you'll see it contains the date and temperature that we fetched from WeatherStack.
 
-![**Image 10:** *Example data recorded for London*](https://www.codewithrepl.it/img/02-data-in-file.png)
+![**Image 10:** *Example data recorded for London*](/images/tutorials/02-managing-files/02-10-write-datetime-weather.png)
 
 If you run the script multiple times, each file will still only contain one line of data: that from the most recent run. This is because when we open a file with in "write" mode (`"w"`), it overwrites it with the new data. Because we want to create historical weather logs, we need to change the second last line to use "append" mode instead (`"a"`).
 
@@ -185,23 +185,23 @@ to
 
 and run the script again. If you open one of the city files again, you'll see it has a new line instead of the old data being overwritten. Newer data is appended to the end of the file. WeatherStack only updates its data every 5 minutes or so, so you might see exact duplicate lines if you run the script multiple times in quick succession.
 
-![**Image 10:** *Adding new data to the end of each file*](https://www.codewithrepl.it/img/02-multiple-logs.png)
+![**Image 11:** *Adding new data to the end of each file*](/images/tutorials/02-managing-files/02-11-london-txt.png)
 
 ## Exporting our weather data files
 
 If you run this script every day for a few months, you'll have a nice data set that could be useful in other contexts too. If you want to download all of the data from Repl.it, you can use the `Download as zip` functionality to export all of the files in a repl (including the code and data files).
 
-![**Image 11:** *Downloading all of our files from Repl.it*](https://www.codewithrepl.it/img/02-exporting-data.png)
+![**Image 12:** *Downloading all of our files from Repl.it*](/images/tutorials/02-managing-files/02-12-export-files.png)
 
 Once you've downloaded the `.zip` file you can extract it in your local file system and find all of the data files which can now be opened with other programs as required.
 
-![**Image 12:** *The created data files on our local file system*](https://www.codewithrepl.it/img/02-exported-data.png)
+![**Image 13:** *The created data files on our local file system*](/images/tutorials/02-managing-files/02-13-files-zip.png)
 
 From the same menu, you can also choose `upload file` or `upload folder` to import files into your repl. For example, if you cleaned the files using external software and then wanted your repl to start appending new data to the cleaned versions, you could re-import them.
 
 Repl.it will warn you about overwriting your existing files if you haven't changed the names.
 
-![**Image 13:** *Be careful about overwriting your precious data*](https://www.codewithrepl.it/img/02-exporting-data.png)
+![**Image 14:** *Be careful about overwriting your precious data*](/images/tutorials/02-managing-files/02-14-upload-files.png)
 
 ## Make it your own
 

@@ -18,13 +18,13 @@ Dependency management is a hugely complicated area, and there is a large ecosyst
 
 In nearly all programming environments, you have to explicitly install third-party dependencies. Let's say you wanted to use the `requests` library (which is not included in Python by default) on your local machine. If you try to import it, you would get a `ModuleNotFound` error, as shown below.
 
-![**Image 1:** *Trying to use a dependency without installing it*](https://www.codewithrepl.it/img/03-module-not-found.png)
+![**Image 1:** *Trying to use a dependency without installing it*](/images/tutorials/03-handling-dependecies/03-01-error-no-module.png)
 
 In order to use this library, you would first have to install it using a command similar to `pip install requests`, and only then would the import statement run correctly.
 
 Repl.it, by contrast, can often do the installation for you completely automatically, using the [Universal Package Manager](https://blog.repl.it/upm). The moment you run the `import requests` line of code, the package manager will go find the correct package and install it, or in some cases Repl.it will even have pre-installed the package. Either way, your code will "just work".
 
-![**Image 2:** *Seamless external package use on a new repl*](https://www.codewithrepl.it/img/03-magic-import.png)
+![**Image 2:** *Seamless external package use on a new repl*](/images/tutorials/03-handling-dependecies/03-02-import-module.png)
 
 This is super convenient, but sometimes you need more control. For example, you might need a specific version of a package, or the universal package manager might not be able to automatically install all of your dependencies. In these cases, you can use more advanced ways to install packages.
 
@@ -38,11 +38,11 @@ To use this, you need to
 2. Search for a package by typing in part or all of its name.
 3. Select the package you want from the search results.
 
-![**Image 3:** *Using the GUI package manager to find a package*](https://www.codewithrepl.it/img/03-gui-package-manager.png)
+![**Image 3:** *Using the GUI package manager to find a package*](/images/tutorials/03-handling-dependecies/03-03-find-package.png)
 
 This will take you to a page showing an overview and summary of the selected package. You can install it to your repl by using the `+` button, as shown below.
 
-![**Image 4:** *Installing a package from the overview page*](https://www.codewithrepl.it/img/03-add-package.png)
+![**Image 4:** *Installing a package from the overview page*](/images/tutorials/03-handling-dependecies/03-04-add-package.png)
 
 Once the package is installed, we can use it in our code. Run the example shown below to extract the "Google Search" text from the main button on the homepage.
 
@@ -63,7 +63,7 @@ Because `requests` is one of the most commonly used Python libraries, Repl.it pr
 
 If you go back to the files tab, you'll see two new files `poetry.lock` and `pyproject.toml` which were created automatically by the installer. Take a look inside the `pyproject.toml` file.
 
-![**Image 5:** *The `pyproject.toml` file lists all dependencies and their versions.*](https://www.codewithrepl.it/img/03-pyproject-toml-bs4.png)
+![**Image 5:** *The `pyproject.toml` file lists all dependencies and their versions.*](/images/tutorials/03-handling-dependecies/03-05-project-files.png)
 
 In this case, line 9 says that our project relies on the `beautifulsoup4` package and needs at least version 4.9.1. If we look at [the `beautifulsoup` page on PyPi](https://pypi.org/project/beautifulsoup4/), we'll see that the latest stable version is 4.9.1, so if this project is run in the future and there is a new version available, it will automatically use the updated package.
 
@@ -77,7 +77,7 @@ To get this to work on Repl.it, we'll have to manually modify the `pyproject.tom
 
 Create a new repl, `SpacyExample`, then click on the `Packages` icon and search for "spacy".
 
-![**Image 6:** *We can access the `spaCy` package via the package index"*](https://www.codewithrepl.it/img/03-spacy-search.png)
+![**Image 6:** *We can access the `spaCy` package via the package index"*](/images/tutorials/03-handling-dependecies/03-06-installing-spacy.png)
 
 Select the version at the top and hit the `+` button to add this package to your application. Once this is complete, head across to your `main.py` and enter the following code:
 
@@ -134,21 +134,21 @@ We will now explicitly tell our application how to access this dependency. To do
 
 First, we need to find the `spaCy` documentation for this model. This can be accessed [here](https://spacy.io/models/en).
 
-![**Image 7:** *The `spaCy` documentation gives us information about the model*](https://www.codewithrepl.it/img/03-spacy-model-docs.png)
+![**Image 7:** *The `spaCy` documentation gives us information about the model*](/images/tutorials/03-handling-dependecies/03-07-spacy-docs.png)
 
 Selecting the `RELEASE DETAILS` button will guide us to where the model is stored online, on [GitHub](https://github.com/explosion/spacy-models/releases//tag/en_core_web_sm-2.3.1). GitHub is a very common place to store code and related components online.
 
-![**Image 8:** *This is the `en_core_web_sm` GitHub page*](https://www.codewithrepl.it/img/03-spacy-github.png)
+![**Image 8:** *This is the `en_core_web_sm` GitHub page*](/images/tutorials/03-handling-dependecies/03-08-spacy-component.png)
 
 The GitHub page also lets us know what version of `spaCy` is needed to make sure the model runs correctly. 
 
-![**Image 9:** *The GitHub page provides information about the requirements and features of the model*](https://www.codewithrepl.it/img/03-spacy-version.png)
+![**Image 9:** *The GitHub page provides information about the requirements and features of the model*](/images/tutorials/03-handling-dependecies/03-09-spacy-version.png)
 
 Here we see that `spaCy` version should be greater than or equal to *2.3.0*, but less than *2.4.0*. We should make a note of this for later, so we can check that we have pinned an appropriate `spaCy` version.
 
 If we scroll right to the bottom of the page, you will see an "Assets" section, and under this you will see the same `Package` icon we used in Repl.it with "en_core_web_sm-2.3.1.tar.gz" next to it. This is what we have been looking for: the file containing the model.
 
-![**Image 10:** *The model can be found under the "Assets" heading*](https://www.codewithrepl.it/img/03-spacy-assets.png)
+![**Image 10:** *The model can be found under the "Assets" heading*](/images/tutorials/03-handling-dependecies/03-10-assets.png)
 
 Right-click on this file and select `copy link address`. We will need this shortly, as this is the URL of the file.
 
@@ -161,13 +161,13 @@ url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_s
 
 The `url` should be the one that you copied from GitHub in the previous step. Your whole `pyproject.toml` file should now look like the one below.
 
-![**Image 11:** *Modifying `pyproject.toml` to explicitly point to the model allows our application to find it and use it*](https://www.codewithrepl.it/img/03-spacy-toml.png)
+![**Image 11:** *Modifying `pyproject.toml` to explicitly point to the model allows our application to find it and use it*](/images/tutorials/03-handling-dependecies/03-11-pyproject-toml.png)
 
 At this point that we should also check that we are using an appropriate version of `spaCy`. We are using version *2.3.2*, which is in the allowed range for the model release (>=2.3.0, <2.4.0) , so we do not need to modify this.
 
 Finally, hit the `run` button. This will cause your configuration files to be updated and then will run your application. If everything has gone correctly, you should see the following in the output pane once it completes.
 
-![**Image 12:** *`spaCy` and the necessary components are all found as dependencies, so the application runs successfully*](https://www.codewithrepl.it/img/03-spacy-success.png)
+![**Image 12:** *`spaCy` and the necessary components are all found as dependencies, so the application runs successfully*](/images/tutorials/03-handling-dependecies/03-12-brown-fox.png)
 
 ### Extracting names from headlines using `spaCy`
 
@@ -207,7 +207,7 @@ Then we loop through all of the [named entities](https://en.wikipedia.org/wiki/N
 
 If you run this code, you should see a list of people making headlines today. At the time of writing, John Lewis is mentioned in the most headlines. (Note that named entity recognition is a difficult task and here `spaCy` considers the possessive form `John Lewis'` to be a separate entity. We can see that John Lewis was mentioned a total of 7 times though.)
 
-![**Image 13:** *Using `spaCy` to extract people in today's news.*](https://www.codewithrepl.it/img/03-people-output.png)
+![**Image 13:** *Using `spaCy` to extract people in today's news.*](/images/tutorials/03-handling-dependecies/03-13-using-spacy.png)
 
 ## Make it your own
 

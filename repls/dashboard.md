@@ -1,33 +1,30 @@
-# Repls Dashboard
+# Managing Your Repls
 
-## Managing Your Repls
+## Repls Dashboard
 
-The repls dashboard is the place to manage and keep track of all your repls.  Repls are
-listed in order of when they were created.  Each repl has its own three-dot menu at the
-far right - bringing up this menu will allow you to:
+To manage and keep track of all your repls, head to your Repls Dashboard. You can find it on your account by clicking on the 'My Repls' tab on the left-hand side.
+
+Repls are listed in order of when they were created, with the most recent first. Each repl has its own three-dot menu at the far right. Bringing up this menu will allow you to:
 
 * Edit the repl (change its name and description)
 * View its history
 * Fork the repl
+* Move the repl
 * Pin it to your profile
-* Toggle privacy settings (Subscribers only)
+* Delete the repl
+* Toggle privacy settings (subscribers only)
 
 ### Starring Repls
 
-You can star a repl to mark it as a favorite.  Starred repls can be easily accessed by
-clicking on the star slider at the top of your dashboard.  There is no limit to how many
-repls are starred.  Only you can see which repls are starred; they will not appear in
-your profile.
+You can "star" a repl to mark it as a favorite. This means you can then easily filter your dashboard to show only your starred repls by clicking on the star slider at the top of your dashboard. There is no limit to how many repls you can star. Only you can see which repls you have starred; this info will not appear in your profile.
 
 ## Searching
 
 ### Basic Search
 
-Typing keywords into the search bar will filter repls whose name or language
-match any of the keywords (separated by spaces).
+To search your repls, click on the search bar. You will be presented with the options "+ New" and "Search". Click "Search" and start typing keywords. This will filter repls whose title or language match any of the keywords (separated by spaces).
 
-Repls only need to match one of the keywords or special filters
-(language/title) in order to be included in the results.
+Repls only need to match one of the keywords in order to be included in the results.
 
 Example:
 
@@ -53,8 +50,7 @@ you would search `language:html`.  This filter is case sensitive.
 
 ### Search by Title
 
-Since plain searches include results with matching languages, you can search within repl
-titles only using the `title:` filter.  Your search term may not include spaces.
+Since plain searches include results with matching languages, you can search within repl titles only using the `title:` filter.  Your search term may not include spaces.
 This filter is case insensitive.
 
 Example:

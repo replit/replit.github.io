@@ -4,7 +4,8 @@
   "description": "This is the repo for the [documentation](https://repl.it/site/docs) for [Repl.it](https://repl.it), a powerful online IDE.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node tooling/search.js && parcel build ./src/scripts.js -d ./static/",
+    "start": "npm run build && node index"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,14 @@
   "dependencies": {
     "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "highlight.js": "^9.15.10",
-    "marked": "^0.7.0"
+    "fs": "0.0.1-security",
+    "fuse.js": "^6.4.6",
+    "highlight.js": "^10.7.1",
+    "lodash": "^4.17.21",
+    "marked": "^0.7.0",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }

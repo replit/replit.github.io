@@ -1,5 +1,7 @@
 # Understanding the Repl.it IDE: a practical guide to building your first project with Repl.it
 
+This tutorial is also available [as a video](https://www.youtube.com/watch?v=SDlrhS8O3kI).
+
 Software developers can get pretty attached to their Integrated Development Environments (IDEs) and if you look for advice on which one to use, you'll find no end of people advocating strongly for one over another: VS Code, Sublime Text, IntelliJ, Atom, Vim, Emacs, and no shortage of others.
 
 In the end, an IDE is just a glorified text editor. It lets you type text into files and save those files, functionality that has been present in nearly all computers since those controlled by punch cards.
@@ -20,7 +22,7 @@ Visit [https://repl.it/signup](https://repl.it/signup) and follow the prompts to
 
 Once you're done, hit the `+ new repl` button in the top right. In the example below, we choose to create a new Python project. Repl.it will automatically choose a random name for your project, or you can pick one yourself. Note that by default your repl will be public to anyone on the internet; this is great for sharing and collaboration, but we'll have to be careful to not include passwords or other sensitive information in any of our projects.
 
-![**Image 1:** *Creating a new Python project*](https://www.codewithrepl.it/img/01-newrepl.png)
+![**Image 1:** *Creating a new Python project*](/images/tutorials/01-introduction/01-01-new-repl.png)
 
 You'll also notice an "Import from GitHub" option. Repl.it allows you to import existing software projects directly from GitHub, but we'll create our own for now. Once your project is created, you'll be taken to a new view with several panes. Let's take a look at what these are.
 
@@ -28,7 +30,7 @@ You'll also notice an "Import from GitHub" option. Repl.it allows you to import 
 
 You'll soon see how configurable Repl.it is and how most things can be moved around to suit your fancy. However, by default, you'll get the following layout.
 
-![**Image 2:** *The Repl.it panes*](https://www.codewithrepl.it/img/01-replpanes.png)
+![**Image 2:** *The Repl.it panes*](/images/tutorials/01-introduction/01-02-repl-panes.png)
 
 1. **Left pane: files and configuration.** This, by default, shows all the files that make up your project. Because we chose a Python project, Repl.it has gone ahead and created a `main.py` file.
 2. **Middle pane: code editor.** You'll probably spend most of your time using this pane. It's a text editor where you can write code. In the screenshot, we've added two lines of Python code, which we'll run in a bit.
@@ -47,7 +49,7 @@ print("Hello World")
 print(1+2)
 ```
 
-![**Image 3**: *Your first program*](https://www.codewithrepl.it/img/01-codeoutput.png)
+![**Image 3**: *Your first program*](/images/tutorials/01-introduction/01-03-code-from-file.png)
 
 Your script will run and the output it generates will appear on the right pane (pane 3). Our code output the phrase "Hello World" (it's a long-standing tradition that when you learn something new the first thing you do is build a 'hello world' project), and then output the answer to the sum `1 + 2`.
 
@@ -61,7 +63,7 @@ While in the previous example we saved our code to a file and then executed the 
 
 You can type code in the right-hand pane (pane 3) and press the "Enter" key to run it. Take a look at the example below where we print "Hello World" again and do a different sum, without changing our code file.
 
-![**Image 4**: *Running code from the REPL*](https://www.codewithrepl.it/img/01-reploutput.png)
+![**Image 4**: *Running code from the REPL*](/images/tutorials/01-introduction/01-04-replit-repl.png)
 
 This is useful for prototyping or checking how things work, but for any serious program you write you'll want to be able to save it, and that means writing the code in a file like in our earlier example.
 
@@ -73,13 +75,13 @@ So far, we've been using the 'main.py' file that was automatically created for u
 
 As an example, we'll write code to solve [quadratic equations](https://www.mathsisfun.com/algebra/quadratic-equation.html). If you've done this before, you'll know it can be tedious without a computer to go through all of the steps.
 
-![**Image 5**: *A quadratic equation example*](https://www.codewithrepl.it/img/01-quadratic.png)
+![**Image 5**: *A quadratic equation example*](/images/tutorials/01-introduction/01-05-quadratic-equation.png)
 
 Let's make Python do the repetitive steps for us by creating a program called "solver". This could eventually have a lot of different solvers, but for now we'll just write one: `solve_quadratic`.
 
 Add a new file to your project by clicking on the `new file` button, as shown below. Call the file `solver.py`. You now have two files in your project: `main.py` and `solver.py`. You can switch between your files by clicking on them.
 
-![**Image 6**: *Adding a new file*](https://www.codewithrepl.it/img/01-solver.png)
+![**Image 6**: *Adding a new file*](/images/tutorials/01-introduction/01-06-add-file.png)
 
 Open the `solver.py` file and add the following code to it.
 
@@ -108,7 +110,7 @@ Note how we use Python's import functionality to import the code from our new so
 
 Run the code and you should see the solution to the equation, as shown below.
 
-![**Image 7**: *The solution to the quadratic equation*](https://www.codewithrepl.it/img/01-quadraticsolved.png)
+![**Image 7**: *The solution to the quadratic equation*](/images/tutorials/01-introduction/01-07-solve-quadratic.png)
 
 Congratulations! You've written your first useful program.
 
@@ -124,11 +126,11 @@ To understand this, compare the three versions of the same repl below.
 * As your friend would see it, a read-only version
 * As your friend would see it after forking it, on an anonymous account
 
-![**Image 8**: *The owner's view of a repl*](https://www.codewithrepl.it/img/01-ownrepl.png)
+![**Image 8**: *The owner's view of a repl*](/images/tutorials/01-introduction/01-08-ownrepl.png)
 
-![**Image 9**: *A guest's 'read-only' view of a repl*](https://www.codewithrepl.it/img/01-readonly.png)
+![**Image 9**: *A guest's 'read-only' view of a repl*](/images/tutorials/01-introduction/01-09-readonly.png)
 
-![**Image 10**: *An anonymous owner's view of a copy of a repl*](https://www.codewithrepl.it/img/01-anonymousclone.png)
+![**Image 10**: *An anonymous owner's view of a copy of a repl*](/images/tutorials/01-introduction/01-10-anonymousfork.png)
 
 What does this mean? Because no one else can edit your repl, you can share it far and wide. But because anyone can _read_ your repl, you should be careful that you don't share anything private or secret in it.
 
@@ -138,11 +140,11 @@ Of course, sometimes you might _want_ others to have write access to your repl s
 
 If you invite someone to your repl, it's different from sharing the URL with them. You can invite someone by clicking `Share` in the top right and sending them the secret link that starts with "https://repl.it/join". This link will give people _edit_ access to your repl.
 
-![**Image 11**: *Inviting someone to your repl*](https://www.codewithrepl.it/img/01-multi.png)
+![**Image 11**: *Inviting someone to your repl*](/images/tutorials/01-introduction/01-11-multiplayer-invite.png)
 
 If you have a friend handy, send it to them to try it out. If not, you can try out multiplayer anyway using a separate incognito window again. Below is our main Repl.it account on the left and a second account which opened the multiplayer invite link on the right. As you can see, all keystrokes can be seen by all parties in real time.
 
-![**Image 12**: *Using multiplayer*](https://www.codewithrepl.it/img/01-multidemo.gif)
+![**Image 12**: *Using multiplayer*](/images/tutorials/01-introduction/01-12-working-together.gif)
 
 ## Make it your own
 

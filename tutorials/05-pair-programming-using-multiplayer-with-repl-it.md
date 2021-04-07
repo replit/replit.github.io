@@ -18,15 +18,15 @@ In this scenario, you are "@Lean3Viljoen94" and the friend that you're asking fo
 
 Start by forking [the data science repl](https://repl.it/@GarethDwyer1/04-data-science-and-visualisation-with-replit) and making sure that you can run it.
 
-![**Image 1:** *Forking another user's project*](https://www.codewithrepl.it/img/05-fork-project.png)
+![**Image 1:** *Forking another user's project*](/images/tutorials/05-multiplayer/05-01-fork-repl.png)
 
 Now from your own fork, press the `share` button, as shown below.
 
-![**Image 2:** *Sharing your project with another user*](https://www.codewithrepl.it/img/05-share-project.png)
+![**Image 2:** *Sharing your project with another user*](/images/tutorials/05-multiplayer/05-02-share-repl.png)
 
 Copy the invite link, and note that this is different from the normal link to your repl. If you copy the link from your URL bar, you can give people _read_ access to your repl, but by copying the invite link you'll give them _write_ access.
 
-![**Image 3:** *Sharing options modal*](https://www.codewithrepl.it/img/05-copy-join-link.png)
+![**Image 3:** *Sharing options modal*](/images/tutorials/05-multiplayer/05-03-share-link.png)
 
 If you knew your friend's Repl.it username or the email associated with the Repl.it account, you could instead use the `Invite` box at the top. Share the link with your friend and wait for them to join.
 
@@ -36,21 +36,21 @@ Remember, you forked the repl in a previous step, so you are the owner of this f
 
 You can use the team chat feature, as shown below.
 
-![**Image 4:** *Starting chat with another user*](https://www.codewithrepl.it/img/05-open-chat2.png)
+![**Image 4:** *Starting chat with another user*](/images/tutorials/05-multiplayer/05-04-team-chat.png)
 
 In the previous tutorial, we looked at GDP by country. Imagine that you are now interested in how this is broken down by _continent_ too. You still want to plot each country as a separate data point, but you want them in different colours, one for each continent. You're not sure how to do this, so you ask for help.
 
 You can see a typing indicator to help decide if you should wait around for a reply or go make coffee.
 
-![**Image 5:** *Chat box showing that user is typing*](https://www.codewithrepl.it/img/05-user-typing2.png)
+![**Image 5:** *Chat box showing that user is typing*](/images/tutorials/05-multiplayer/05-05-typing-indicator.png)
 
 Your friend tells you about the `hue` argument and points out that you already have this data in the `continent` column in your data frame. You add `hue="continent"` to the graph and re-run it, but it doesn't quite work out how you expect.
 
-![**Image 6:** *Changing the plot from grouping data by country to grouping by continent*](https://www.codewithrepl.it/img/05-changing-hue.png)
+![**Image 6:** *Changing the plot from grouping data by country to grouping by continent*](/images/tutorials/05-multiplayer/05-06-add-hue-continent.png)
 
 Your friend suggests maybe a scatter plot without the correlation line might look better, but when you try that it results in an error. The error message is hidden by the chat box, so you move it to the other side of the screen.
 
-![**Image 7:** *You can move the chat box to the left of the IDE to see errors better*](https://www.codewithrepl.it/img/05-moving-chat-box.png)
+![**Image 7:** *You can move the chat box to the left of the IDE to see errors better*](/images/tutorials/05-multiplayer/05-07-move-chatbox.png)
 
 This is getting a bit more complicated than you bargained for. Sometimes showing is easier than telling, so your friend starts editing the code directly instead of telling you how to do so using chat. The code
 
@@ -69,7 +69,7 @@ ax = sns.scatterplot(`
 ax.set(xlabel="GDP per capita", ylabel="Life expectancy")
 ```
 
-![**Image 8:** *In our new plot, we can see that African countries tend to have low life expectency and low GDP, but the correlation looks weaker for the other continents*](https://www.codewithrepl.it/img/05-color-scatter.png)
+![**Image 8:** *In our new plot, we can see that African countries tend to have low life expectency and low GDP, but the correlation looks weaker for the other continents*](/images/tutorials/05-multiplayer/05-08-figure-one.png)
 
 ## Make it your own
 

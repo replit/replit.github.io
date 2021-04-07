@@ -2,6 +2,8 @@
 
 Both students and teachers are capable of exporting data - teachers can export their classroom grade data, whereas students can export their assignments to repls.
 
+_Note: Classroom will be fully deprecated on 1/31/2021 and you can [migrate your Classroom to a Team for free for 4 months](https://repl.it/classroom-migration)_
+
 ## Student Exports
 
 Students can export an assignment to a repl, which can then be downloaded as a zip file, or worked on outside the classroom environment.  Students export their submissions from their classroom page, or on the submission itself.

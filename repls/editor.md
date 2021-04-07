@@ -1,16 +1,15 @@
 
-# Editor Tips and Tricks
+# Editor Shortcuts
 
-The following “Tips and Tricks” will teach you how to be productive in the Repl.it code editor. Here, you will become familiar with the code editor’s powerful shortcuts for editing, writing, and inspecting code.
-
+Be more productive in the Replit code editor by learning the code editor’s powerful shortcuts for editing, writing, and inspecting code.
 
 ## Command Palette
 
 The command palette allows you to view all available commands based on your current context. 
 
-To access the command palette on a Mac, press `shift+cmd+P`. On other computers, press `ctrl+shift+P`.
+To access the command palette press `F1` or `Ctrl+Shift+P` (`cmd+shift+P` on macOS). **Note:** if you are using Firefox, the second option will open an incognito window, so use the `F1` option instead.
 
-![command palette](https://media.giphy.com/media/QfHVAcYeIKD3D3COZ0/giphy.gif)
+![command palette](/images/repls/editor/command_palette.gif)
 
 ## Frequently Used Keyboard Shortcuts
 
@@ -23,15 +22,15 @@ Press `option+up` or `option+down` on a Mac to move the current line up or down.
 
 On other computers, press `alt+up` or `alt+down`.
 
-![move line](https://media.giphy.com/media/TI9imRT8QpTGHYuaLw/giphy.gif)
+![move line](/images/repls/editor/move_line.gif)
 
-### Copying the Current Line
+### Clone the Current Line
 
-Press `shift+option+up` or `shift+option+down` on a Mac to copy the current line above or below.
+Press `shift+option+up` or `shift+option+down` on a Mac to clone the current line above or below.
 
 On other computers, press `shift+alt+up` or `shift+alt+down`.
 
-![clone line](https://media.giphy.com/media/WqXFTA3784FlOk15aW/giphy.gif)
+![clone line](/images/repls/editor/clone_line.gif)
 
 ### Selecting Lines
 
@@ -39,7 +38,7 @@ Press `cmd+I` on a Mac to select a line.
 
 On other computers, press `ctrl+I`.
 
-![select line](https://media.giphy.com/media/ftAlnwDT2U4KcRP6rs/giphy.gif)
+![select line](/images/repls/editor/select_line.gif)
 
 ### Deleting Lines
 
@@ -47,7 +46,7 @@ Press `shift+cmd+K` on a Mac to delete a line.
 
 On other computers, press `ctrl+shift+K`.
 
-![delete line](https://media.giphy.com/media/mCK6qXeh9AUfsjc6QE/giphy.gif)
+![delete line](/images/repls/editor/delete_line.gif)
 
 ### Inserting Lines
 
@@ -55,7 +54,7 @@ On a Mac, press `shift+cmd+enter` to insert a line above.
 
 On other computers, press `ctrl+shift+enter`.
 
-![insert line](https://media.giphy.com/media/iIYTXMcdYl1Q5IEC8t/giphy.gif)
+![insert line](/images/repls/editor/insert_line.gif)
 
 ### Adding Cursors
 
@@ -63,7 +62,7 @@ Press `cmd+option+up` or `cmd+option+down` on a Mac to add cursors above or belo
 
 On other computers, press `ctrl+alt+up` or `ctrl+alt+down`.
 
-![adding cursors](https://media.giphy.com/media/S6NFcjap96u7Dsv7Oc/giphy.gif)
+![adding cursors](/images/repls/editor/adding_cursors.gif)
 
 ### Find
 
@@ -71,7 +70,7 @@ Press `cmd+F` on a Mac to find.
 
 On other computers, press `ctrl+F`.
 
-![find](https://media.giphy.com/media/Zcd66Tdu4DjTSc6kgv/giphy.gif)
+![find](/images/repls/editor/find.gif)
 
 ### Replace
 
@@ -79,7 +78,7 @@ Press `option+cmd+F` on a Mac to replace.
 
 On other computers, press `ctrl+H`.
 
-![replace](https://media.giphy.com/media/ck5DYmEfyv6LVgCAQM/giphy.gif)
+![replace](/images/repls/editor/replace.gif)
 
 ### Find Next/Previous
 
@@ -87,7 +86,7 @@ On a Mac, press `cmd+G` to find next or `shift+cmd+G` to find previous.
 
 On other computers, press `F3` to find next or `shift+F3` to find previous.
 
-![find next](https://media.giphy.com/media/Zcd66Tdu4DjTSc6kgv/giphy.gif)
+![find next](/images/repls/editor/find_next.gif)
 
 ### Adding Selections to Next Find Match
 
@@ -95,25 +94,23 @@ Press `cmd+D` on a Mac to add a selection to the next find match.
 
 On other computers, press `ctrl+D`.
 
-![adding selections](https://media.giphy.com/media/MeJNRP69h6EAkrHqBC/giphy.gif)
+![adding selections](/images/repls/editor/adding_selections.gif)
 
 ## Navigation
 
 Use the following shortcuts to navigate the editor.
 
-### Open files
+### Open Files
 
 Press `cmd+P` on a Mac to quickly open files.
 
 On other computers, press `ctrl+P`.
 
-![Open files](https://media.giphy.com/media/RMrVva0au7Eac8bKMW/giphy.gif)
+![Open files](/images/repls/editor/open_files.gif)
 
 ### Go to Line
 
-Press `cmd+G` on a Mac to go to a specified line.
+Press `ctrl+G` to go to a specified line.
 
-On other computers, press `ctrl+G`.
-
-![go to line](https://media.giphy.com/media/cmwP1EbWQVh0fwAzfb/giphy.gif)
+![go to line](/images/repls/editor/go_to_line.gif)
 

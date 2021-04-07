@@ -1,0 +1,146 @@
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+body {
+  width: 80rem;
+  margin: 0 auto;
+  background-color: #f4b0b0;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Bungee Shade", cursive;
+  color: #fc47bb;
+  text-shadow: 0 0 5px #fc47bb;
+}
+
+.searchContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.searchLabel {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0.2rem;
+}
+
+.searchInput {
+  height: 2rem;
+  width: 25rem;
+  box-shadow: 0 0 5px #fc47bb;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0.2rem;
+}
+
+.searchResult {
+  font-family: "Montserrat", sans-serif;
+}
+
+.newCardButton {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  margin: 0 0.2rem;
+}
+
+img {
+  max-width: 25rem;
+  max-height: 30rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.cardContainer {
+  display: flex;
+  max-width: 80rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80rem;
+  margin: 1rem;
+}
+
+.card {
+  background-color: #f7c5c5;
+  margin: 0.5rem;
+  max-width: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.tagContainer {
+  display: flex;
+  justify-content: center;
+}
+.tagButton {
+  text-shadow: 0 0 5px #fc47bb;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  margin: 0.5rem;
+}
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Style inputs */
+.newCardInput,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+.submitButton {
+  width: 100%;
+  background-color: #fc47bb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+.submitButton :hover {
+  background-color: #b92985;
+}

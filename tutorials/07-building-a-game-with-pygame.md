@@ -1,6 +1,6 @@
 # Building a game with PyGame and Repl.it
 
-![](https://codewithrepl.it/img/07-header.png)
+![](/images/tutorials/07-pygame/07-01-heading.png)
 
 So far, we've mainly seen how to write text-based programs, or those with a basic web front end. In this tutorial, we'll instead build a 2D game using PyGame. You'll use animated sprites and learn how to:
 
@@ -13,7 +13,7 @@ The basic premise of the game is as follows. You're a juggler, learning to juggl
 
 Although [PyGame](https://en.wikipedia.org/wiki/Pygame) is a standard Python library, Repl.it provides it installed as a separate language. Create a new repl and select PyGame from the language dropdown.
 
-![**Image 1:** *Choosing PyGame from the `Create New Repl` screen.*](https://codewithrepl.it/img/07-creating-pygame-repl.png)
+![**Image 2:** *Choosing PyGame from the `Create New Repl` screen.*](/images/tutorials/07-pygame/07-02-new-pygame-repl.png)
 
 You'll see "Python3 with PyGame" displayed in the default console and a separate pane in the Repl.it IDE where you will be able to see and interact with the game you will create.
 
@@ -21,7 +21,7 @@ The first thing we need is a so-called "sprite", which is a basic image file tha
 
 Now upload it to your repl using the `upload file` button and you should be able to see a preview of the image by clicking on it in the files pane.
 
-![**Image 2:** *Viewing our sprite after uploading it.*](https://codewithrepl.it/img/07-viewing-tennis-ball.png)
+![**Image 3:** *Viewing our sprite after uploading it.*](/images/tutorials/07-pygame/07-03-upload-png-sprite.png)
 
 ## Displaying the sprite using PyGame
 
@@ -65,7 +65,7 @@ We start the game loop and call `blit` on our ball. [Blitting](https://en.wikipe
 
 If you run this code, you should see the ball pop up in the top right pane, as shown below.
 
-![**Image 3:** *Drawing the tennis ball in our PyGame environment.*](https://codewithrepl.it/img/07-blit-tennis-ball.png)
+![**Image 4:** *Drawing the tennis ball in our PyGame environment.*](/images/tutorials/07-pygame/07-04-insert-run-ball.png)
 
 ## Making our tennis ball move with each frame
 
@@ -100,7 +100,7 @@ Now modify your game loop to include a call to the new `update()` method. The lo
 
 The `(0, 1)` tuple causes the ball to move its Y coordinate by 1 each loop and keep a constant X coordinate. This has the effect of making the ball drop slowly down the screen. Run your code again to check that this works.
 
-![**Image 4: **The ball falling at a constant rate.*](https://codewithrepl.it/img/07-falling-ball.gif)
+![**Image 5:** *The ball falling at a constant rate.*](/images/tutorials/07-pygame/07-05-GIF-falling-ball.gif)
 
 When the ball gets to the bottom of the screen, it'll just keep falling but that's OK for now. Let's see how we can add click detection.
 
@@ -138,7 +138,7 @@ To achieve this, we'll add logic to our `update()` method (this is why we kept i
 
 This checks to see if the top of the ball is above the top of the screen. If it is, we set the speed back to `(0, 1)` (moving down).
 
-![**Image 5:** *Now we can bounce the ball off the ceiling.*](https://codewithrepl.it/img/07-bouncing-ball.gif)
+![**Image 6:** *Now we can bounce the ball off the ceiling.*](/images/tutorials/07-pygame/07-06-GIF-bounce-off-roof.gif)
 
 So far, we have restricted the ball to moving vertically, but we can apply the same principles and move it horizontally or diagonally too. Let's also add some randomness into the mix so that it's less predictable (and harder for the player to press). The ball will randomly change its horizontal movement when it bounces off the ceiling and each time we throw it.
 
@@ -272,11 +272,11 @@ To kill balls when they fall through the floor, we can add another check to the 
 
 Run the code again and you should be able to juggle three balls. See how long you can keep them in the air.
 
-![**Image 6:** *Juggling three balls.*](https://codewithrepl.it/img/07-three-balls.gif)
+![**Image 7:** *Juggling three balls.*](/images/tutorials/07-pygame/07-07-GIF-three-balls.gif)
 
 If you want a harder version, add a counter to keep track of how many successful throws the player has achieved and add a new ball for every three successful throws.
 
-![**Image 7:** *Adding more balls.*](https://codewithrepl.it/img/07-lots-of-balls.png)
+![**Image 8:** *Adding more balls.*](/images/tutorials/07-pygame/07-08-multiple-balls.png)
 
 Now the game is to see how many balls you can juggle with. If it's too easy, modify the speeds and angles of the balls. 
 

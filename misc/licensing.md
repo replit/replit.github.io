@@ -1,10 +1,10 @@
-# Licensing Informations
+# Licensing Information
 
-Our user's privacy is of utmost importance to us.  Here you will find information about how your repls are licensed.
+Our users' privacy is of utmost importance to us. Here, you will find information about how your repls are licensed.
 
 ## Public Repls and Classrooms
 
-Content published to a public repl or a Classroom are automatically published under an MIT license.  The full text of the MIT license reads as follows:
+Content published to a public repl or a Classroom are automatically published under an MIT license. The full text of the MIT license reads as follows:
 
 > Copyright <YEAR> <COPYRIGHT HOLDER> <URL TO REPL>
 

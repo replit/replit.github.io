@@ -1,70 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-	<title><%= title %></title>
-	<link rel="stylesheet" type="text/css" href="/style.css">
-	<link rel="stylesheet" type="text/css" href="/hljs.min.css">
-	<link
-		href="//fonts.googleapis.com/css?family=Lato:300,400|Questrial|Raleway:400,100,700"
-		rel="stylesheet"
-		type="text/css"
-	/>
-  <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-  <link rel="shortcut icon" href="https://repl.it/public/images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <head>
+    <meta charset="utf-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/style.css?n=1" />
+    <link rel="stylesheet" href="/prism.css" />
 
-  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-  
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-25629695-1', 'auto');
-    ga('send', 'pageview');</script><script>
-        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
-          analytics.load('jdVID8rHoI7wkCBDjKmjApGBGWclWIKJ');
-          analytics.page();
-        }}();</script><script>
-    (function (isTouchDevice) {
-    if (!isTouchDevice) return;
-    var isTouchClass = 'is-touch-device';
-    var docElement = document.documentElement;
-    docElement.className = docElement.className ? [docElement.className, isTouchClass].join(' ') : isTouchClass;
-    })(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
-  </script>
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:300,400|Questrial|Raleway:400,100,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-</head>
-<body>
-<%- include('header'); %>
-<a class="repl-link" href="/__repl#<%= active %>.md">
-	edit on Repl.it
-</a>
-<div class="sidebar">
-<% for (const cat of sidebar) { %>
-	<div>
-		<div class="sidebar-heading"><%= cat.name %></div>
-		<ul class="sidebar-list">
-		<% for (const c of cat.contents) { %>
-			<li>
-				<%
-					const path = cat.slug + '/' + c.slug;
-					const alink = active === path ? 'active' : '';
-				%>
-				<a
-					class="sidebar-link <%= alink %>"
-					href="/<%= path %>"
-				>
-					<%= c.name %>
-				</a>
-			</li>
-		<% } %>
-		</ul>
-	</div>
-<% } %>
-</div>
-<div class="markdown">
-	<%- rendered %>
-</div>
-</body>
+    <link
+      rel="shortcut icon"
+      href="https://replit.com/public/images/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+
+    <script>
+      !(function () {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on",
+            ];
+            analytics.factory = function (t) {
+              return function () {
+                var e = Array.prototype.slice.call(arguments);
+                e.unshift(t);
+                analytics.push(e);
+                return analytics;
+              };
+            };
+            for (var t = 0; t < analytics.methods.length; t++) {
+              var e = analytics.methods[t];
+              analytics[e] = analytics.factory(e);
+            }
+            analytics.load = function (t) {
+              var e = document.createElement("script");
+              e.type = "text/javascript";
+              e.async = !0;
+              e.src =
+                ("https:" === document.location.protocol
+                  ? "https://"
+                  : "http://") +
+                "cdn.segment.com/analytics.js/v1/" +
+                t +
+                "/analytics.min.js";
+              var n = document.getElementsByTagName("script")[0];
+              n.parentNode.insertBefore(e, n);
+            };
+            analytics.SNIPPET_VERSION = "4.0.0";
+            analytics.load("jdVID8rHoI7wkCBDjKmjApGBGWclWIKJ");
+            analytics.page();
+          }
+      })();
+    </script>
+    <script>
+      (function (isTouchDevice) {
+        if (!isTouchDevice) return;
+        var isTouchClass = "is-touch-device";
+        var docElement = document.documentElement;
+        docElement.className = docElement.className
+          ? [docElement.className, isTouchClass].join(" ")
+          : isTouchClass;
+      })(
+        "ontouchstart" in window ||
+          (window.DocumentTouch && document instanceof DocumentTouch)
+      );
+    </script>
+  </head>
+  <body>
+    <div class="docs-container">
+      <%- include('header'); %>
+      <a class="repl-link" href="/__repl#<%= active %>.md"> Edit on Replit </a>
+
+      <button class="menu-button" data-menu="button">Navigate</button>
+
+      <div class="content-container" >
+        <div class="menu__content" data-menu="content">
+          <div class="sidebar">
+            <% for (const cat of sidebar) { %>
+            <div>
+              <div class="sidebar-heading"><%= cat.name %></div>
+              <ul class="sidebar-list">
+                <% for (const c of cat.contents) { %>
+                <li>
+                  <% const path = cat.slug + '/' + c.slug; const alink = active
+                  === path ? 'active' : ''; %>
+                  <a class="sidebar-link <%= alink %>" href="/<%= path %>">
+                    <%= c.name %>
+                  </a>
+                </li>
+                <% } %>
+              </ul>
+            </div>
+            <% } %>
+          </div>
+
+          <button class="menu__close" data-menu="close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="markdown"><%- rendered %></div>
+      </div>
+    </div>
+
+    <script src="/prism.js"></script>
+    <script src="/scripts.js"></script>
+  </body>
 </html>

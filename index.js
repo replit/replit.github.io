@@ -22,6 +22,7 @@ const getTree = async () =>
 	JSON.parse((await fs.readFile('./sidebar.json', 'utf8')));
 
 const render = async (res, category, slug) => {
+  res.set('Cache-Control', 'public, max-age=600, stale-if-error=60, stale-while-revalidate=60')
 	res.locals.rendered = await renderMarkdown(
 		path.join(__dirname, category, slug) + '.md',
 	);
@@ -32,9 +33,19 @@ const render = async (res, category, slug) => {
 	const cobj = t.find(c => c.slug === category);
 	const dobj = cobj.contents.find(d => d.slug === slug)
 
-	res.locals.title = `Repl.it - ${ dobj? dobj.name : 'unknown'}`;
+  if (category === 'repls' && slug === 'intro') {
+    // landing page gets a short title for search engine visibility
+    res.locals.title = 'Replit Docs';
+  } else {
+	  res.locals.title = `Replit Docs - ${ dobj? dobj.name : slug }`;
+  }
 	res.render('index.ejs');
 }
+
+app.use((req, res, next) => {
+	console.log(req.method, req.path)
+	return next()
+})
 
 app.get('/', (req, res) => {
 	render(res, 'repls', 'intro');
@@ -52,9 +63,8 @@ app.get('/:category/:slug', async (req, res) => {
 	render(res, category, slug)
 		.catch(err => {
 			res.send(`
-      < h1 > Something went wrong!</h1 >
-      <pre>${err.toString()}</pre>
-      <p>maybe you can <a href="https://repl.it/@turbio/replit-docs">help fix it</a></p>
+      <h1>Something went wrong!</h1 >
+      <p>maybe you can <a href="https://replit.com/@turbio/replit-docs">help fix it</a></p>
 `);
 		});
 });

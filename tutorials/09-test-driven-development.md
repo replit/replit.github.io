@@ -27,7 +27,7 @@ Now add a file at the root level of the project called `__init__.py`. This is a 
 
 Finally, create the files where we'll actually write code. Inside the `utils` folder create a file called `name_helper.py` and inside the `tests` folder create one called `test_name_helper.py`. Your project should now look as follows. Make sure that you have all the files and folders with exactly these names, in the correct places.
 
-![**Image 1:** *Setting up our project structure for `pytest`.*](https://codewithrepl.it/img/09-project-structure.png)
+![**Image 1:** *Setting up our project structure for `pytest`.*](/images/tutorials/09-TDD/09-01-pytest-project-structure.png)
 
 ## Defining examples for the name split function
 
@@ -36,7 +36,7 @@ Splitting names is useful in many contexts. For example, it is a common requirem
 ```python
 def split_name(name):
     first_name, last_name = name.split()
-    return first_name, last_name
+    return [first_name, last_name]
 
 print(split_name("John Smith"))
 # >>> ["John", "Smith"]
@@ -86,7 +86,7 @@ Press the `Run` button. `pytest` does automatic test discovery so you don't need
 
 You should see some scary looking red failures, as shown below. (`pytest` uses dividors such as `======` and `------` to format sections and these can get messy if your output pane is too narrow. If things look a bit wonky try making it wider and rerunning.)
 
-![**Image 2:** *Reading the `pytest` error messages.*](https://codewithrepl.it/img/09-failing-first-test.png)
+![**Image 2:** *Reading the `pytest` error messages.*](/images/tutorials/09-TDD/09-02-run-pytest.png)
 
 If you read the output from the top down you'll see a bunch of different things happened. First, `pytest` ran test discovery and found one test. It ran this and it failed so you see the first red `F` above the `FAILURES` section. That tells us exactly which line of the test failed and how. In this case, it was an `AttributeError` as we tried to use `split_name` which was not defined. Let's go fix that.
 
@@ -95,12 +95,12 @@ Head over to the `utils/name_helper.py` file and add the following code.
 ```python
 def split_name(name):
     first_name, last_name = name.split()
-    return first_name, last_name
+    return [first_name, last_name]
 ```
 
 This is the very simple version we discussed earlier that can only handle two names, but it will solve the name error and TDD is all about small increments. Press `Run` to re-run the tests and you should see a far more friendly green output now, as below, indicating that all of our tests passed.
 
-![**Image 3:** *Seeing our tests pass after updating the code.*](https://codewithrepl.it/img/09-passing-first-test.png)
+![**Image 3:** *Seeing our tests pass after updating the code.*](/images/tutorials/09-TDD/09-03-pytest-green-output.png)
 
 Before fixing our function to handle more complex cases, let's first write the tests and check that they fail. Go back to `tests/test_name_helper.py` and add the following four test functions beneath the existing one.
 
@@ -127,7 +127,7 @@ def test_split_name_nonames():
 
 Rerun the tests and you should see a lot more output now. If you scroll back up to the most recent `===== test session starts =====` section, it should look as follows.
 
-![**Image 4:** *Seeing more failures after adding more tests.*](https://codewithrepl.it/img/09-many-failures.png)
+![**Image 4:** *Seeing more failures after adding more tests.*](/images/tutorials/09-TDD/09-04-run-tests.png)
 
 In the top section, the `.FFFF` is shorthand for "five tests were run, the first one passed and the next four failed" (a green dot indicates a pass and a red F indicates a failure). If you had more files with tests in them, you would see a line like this per file, with one character of output per test.
 
@@ -154,7 +154,7 @@ def split_name(name):
 
 This should handle the case of zero, one, or two names. Let's run our tests again to see if we've made progress before we handle the more difficult cases. You should get a lot less output now and three green dots, as shown below.
 
-![**Image 5:** *Progress: some of our tests pass now.*](https://codewithrepl.it/img/09-three-tests-pass.png)
+![**Image 5:** *Progress: some of our tests pass now.*](/images/tutorials/09-TDD/09-05-three-green-dots.png)
 
 The rest of the output indicates that it's the middle names and surname prefix examples that are still tripping up our function, so let's add the code we need to fix those. Another important aspect of TDD is keeping your functions as small as possible so that they are easier to understand, test, and reuse, so let's write a second function to handle the three or more names cases.
 
@@ -195,7 +195,7 @@ def split_name(name):
 
 The new function works by always appending names to the `first_names` list until it gets to the last name, or until it encounters a name that starts with a lowercase letter, at which point it adds all of the remaining names to `last_names` list. If you run the tests again, they should all pass now.
 
-![**Image 6:** *All of the tests pass after adding a new function.*](https://codewithrepl.it/img/09-all-five-pass.png)
+![**Image 6:** *All of the tests pass after adding a new function.*](/images/tutorials/09-TDD/09-06-five-passed.png)
 
 The tests were already helpful in making sure that we understood the problem and that our function worked for specific examples. If we had made any off-by-one mistakes in our code that deals with three or more names, our tests would have caught them. If we need to refactor or change our code in future, we can also use our tests to make sure that our new code doesn't introduce any regressions (where fixing problems causes code to break on other examples that worked before the fix.)
 
@@ -216,17 +216,17 @@ print(f"Your last name is: {last_name}")
 
 If you run this, it will prompt the user for their name and then display their first and last name.
 
-![**Image 7:** *Using our function in a basic console application.*](https://codewithrepl.it/img/09-dumbledore.png)
+![**Image 7:** *Using our function in a basic console application.*](/images/tutorials/09-TDD/09-07-using-function.png)
+
+Because you're using the `main.py` file now, you can also invoke `pytest` directly from the output console on the right by typing `import pytest; pytest.main()`. Note that updates to your code are only properly applied when you press the `Run` button though, so make sure to run your code between changes before running the tests.
+
+![**Image 8:** *Triggering a new error and invoking `pytest` from the output pane.*](/images/tutorials/09-TDD/09-08-run-pytestmain.png)
 
 ## Make it your own
 
 We've written a name splitter that can handle some names more complicated than just "John Smith". It's not perfect though: for example, if you put in a name with two consecutive spaces it will crash our program. You could fork the project and fix this by first writing a test with consecutive spaces and then modifying the code to handle this (and any other edge cases you can think of).
 
 <iframe height="400px" width="100%" src="https://repl.it/@GarethDwyer1/namesplitter?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-Because you're using the `main.py` file now, you can also invoke `pytest` directly from the output console on the right by typing `import pytest; pytest.main()`. Note that updates to your code are only properly applied when you press the `Run` button though, so make sure to run your code between changes before running the tests.
-
-![**Image 8:** *Triggering a new error and invoking `pytest` from the output pane.*](https://codewithrepl.it/img/09-error-and-invoke-from-repl.png)
 
 ## Where next
 
