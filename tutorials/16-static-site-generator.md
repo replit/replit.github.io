@@ -577,7 +577,7 @@ import inflect
 The [`inflect`](https://pypi.org/project/inflect/) module allows us to turn singular words into plurals and vice versa. This will be useful for working with the `types` list from our configuration file. Change the `load_config` function to resemble the following.
 
 ```python
-def load_config(config_filename) 
+def load_config(config_filename): 
 
     with open(config_filename, 'r') as config_file:
         config = toml.loads(config_file.read())
@@ -729,7 +729,7 @@ def render_site(config, content, environment, output_directory):
     # Homepage
     index_template = environment.get_template("index.html")
     with open("public/index.html", 'w') as file:
-        file.write(index_template.render(site=site))
+        file.write(index_template.render(config=config, content=content))
 
 
     # Static files
