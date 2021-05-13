@@ -237,6 +237,10 @@
             {
                 "name": "Repl Environment Variables",
                 "slug": "repl-environment-variables"
+            },
+            {
+                "name": "Replit API",
+                "slug": "replit-api"
             }
         ]
     },
