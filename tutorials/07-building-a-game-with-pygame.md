@@ -17,7 +17,7 @@ Although [PyGame](https://en.wikipedia.org/wiki/Pygame) is a standard Python lib
 
 You'll see "Python3 with PyGame" displayed in the default console and a separate pane in the Repl.it IDE where you will be able to see and interact with the game you will create.
 
-The first thing we need is a so-called "sprite", which is a basic image file that we will use in our game. Download the tennis ball file available [here](https://raw.githubusercontent.com/ritza-co/public-images/master/small_tennis.png) and save it to your local machine.
+The first thing we need is a so-called "sprite", which is a basic image file that we will use in our game. Download the tennis ball file available [here](https://raw.githubusercontent.com/replit/replit.github.io/master/tutorials/downloads/small_tennis.png) and save it to your local machine.
 
 Now upload it to your repl using the `upload file` button and you should be able to see a preview of the image by clicking on it in the files pane.
 
