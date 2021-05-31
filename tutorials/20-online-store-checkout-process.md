@@ -270,7 +270,7 @@ In order to display these bricks, we want to add some basic HTML that we can dyn
 
 We'll be dynamically adding our array of bricks to the `id=bricks` div tag.
 
-The full code for `index.js` is:
+The full code for `index.html` is:
 
 ```html
 <!DOCTYPE html>
