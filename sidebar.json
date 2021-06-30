@@ -60,6 +60,10 @@
       {
         "name": "Getting started with Nix",
         "slug": "getting-started-nix"
+      },
+      {
+        "name": "Debugging",
+        "slug": "debugging"
       }
     ]
   },
