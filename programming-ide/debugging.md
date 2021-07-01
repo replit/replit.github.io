@@ -8,9 +8,9 @@ Repls that are written in the following languages can use a built-in, multiplaye
 * Python
 * With more coming soon (through [nix](/programming-ide/getting-started-nix)).
 
-To get started with the debugger, click on the ![Debugger icon](https://docs.replit.com/images/debugger/icon.png) icon on the sidebar:
+To get started with the debugger, click on the Debugger icon on the sidebar:
 
-![Debugger panel](https://docs.replit.com/images/debugger/debugger_panel.png)
+![Debugger panel](https://docs.replit.com/images/programming-ide/debugging/debugger_panel.png)
 
 Now you can start adding [breakpoints](https://en.wikipedia.org/wiki/Breakpoint) to your repl: breakpoints are lines of the code where the program will be paused during execution while debugging. Breakpoints don't affect the program when run normally. When the program is paused, the Debugger sidebar will show the values of all variables, avoiding the need for adding print / log statements.
 
