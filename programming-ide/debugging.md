@@ -1,6 +1,6 @@
 # Debugging
 
-Repls that are written in the following languages can use a native, multiplayer debugger:
+Repls that are written in the following languages can use a built-in, multiplayer debugger:
 
 * C/C++
 * Java
