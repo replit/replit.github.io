@@ -7,7 +7,8 @@ const initSearch = async () => {
     const data = await response.json();
 
     const fuse = new Fuse(data, {
-        threshold: 0.2,
+        threshold: 0.3,
+        findAllMatches: true,
         keys: [
         {
             name: "name",
@@ -26,7 +27,7 @@ const initSearch = async () => {
 
     const search = document.querySelector('[data-search]')
     const source = document.querySelector('[data-search="source"]')
-    const output = document.querySelector('[data-search="output"')
+    const output = document.querySelector('[data-search="output"]')
     source.disabled = false;
 
     const removeResults = () => {
@@ -45,7 +46,7 @@ const initSearch = async () => {
         if (!results || results.length < 1) {
             output.innerHTML = `No results`
             return
-        };
+        }
 
         const groups = results.slice(0, 8).reduce((result, { item: { category, ...rest } } ) => ({
             ...result,

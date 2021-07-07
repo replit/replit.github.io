@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title><%= title %></title>
-    <link rel="stylesheet" type="text/css" href="/style.css?n=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css?n=2" />
     <link rel="stylesheet" href="/prism.css" />
 
     <link
@@ -146,5 +146,11 @@
 
     <script src="/prism.js"></script>
     <script src="/scripts.js"></script>
+    <script>
+      function toggleSearch (){
+        let element = document.getElementById("search");
+        element.classList.toggle("search-mobile");
+      }
+    </script>
   </body>
 </html>
