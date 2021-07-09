@@ -7,8 +7,10 @@ const initSearch = async () => {
     const data = await response.json();
 
     const fuse = new Fuse(data, {
-        threshold: 0.3,
-        findAllMatches: true,
+        threshold: 0.4,
+        includeScore: true,
+        shouldSort: true,
+        ignoreLocation: true,
         keys: [
         {
             name: "name",
@@ -16,11 +18,11 @@ const initSearch = async () => {
         },
         {
             name: "category",
-            weight: 0.2,
+            weight: 0.1,
         },
         {
             name: "heading",
-            weight: 0.1,
+            weight: 0.5,
         },
         ],
     });
