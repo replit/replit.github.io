@@ -14,6 +14,47 @@
     align-items: center;
   }
 
+  .navigation-container-mobile {
+    display: none;
+  }
+
+  .navigation-container-mobile img {
+    margin: 0 12px;
+    width: 110px;
+  }
+
+  @media (max-width: 750px) {
+    .navigation {
+      flex-wrap: wrap;
+    }
+
+    .navigation-container-mobile  {
+      margin-bottom: 1rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-mobile {
+      min-width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    .navigation-container {
+      display: none;
+    }
+
+    .desktop-sign-up {
+      display: none !important;
+    }
+
+    .search_output {
+      left: -1rem !important;
+    }
+  }
+
   .navigation-links {
     text-decoration: none;
     padding: 4px 8px 8px 8px;
@@ -36,6 +77,8 @@
     text-decoration: none;
     color: white;
     transition: 0.2s opacity ease-in-out;
+    white-space: nowrap;
+    display: block;
   }
 
   .navigation .sign-up:hover {
@@ -65,31 +108,51 @@
       margin: 0;
     }
   }
+
+  .mobile-signup {
+    display: flex;
+    flex-direction: row;
+  }
+
 </style>
 
 <nav class="navigation">
+
+  <div class="navigation-container-mobile">
+    <a class="logo" href="//replit.com">
+      <img src="//replit.com/public/images/logo-small.png" alt="Replit"/>
+    </a>
+
+    <div class="mobile-signup">
+      <button class="search-button" onclick="toggleSearch()">Search</button>
+      <a class="sign-up" href="//replit.com/signup">Sign up</a>
+    </div>
+  </div>
+
   <div class="navigation-container">
-    <a class="logo" href="//replit.com"
-      ><img src="//replit.com/public/images/logo-small.png" alt="Replit"
-    /></a>
+    <a class="logo" href="//replit.com">
+      <img src="//replit.com/public/images/logo-small.png" alt="Replit"/>
+    </a>
 
     <a class="navigation-links" href="//replit.com/site/ide">Features</a>
     <a class="navigation-links" href="//replit.com/site/jobs">Jobs</a>
     <a class="navigation-links" href="//blog.replit.com">Blog</a>
     <a class="navigation-links" href="//replit.com/jam?from=static">Jam</a>
+  </div>
 
-    <div class="search" data-search>
-      <input
-        class="search_input"
-        placeholder="Search docs..."
-        data-search="source"
-        disabled
-      />
-      <div class="search_output">
-        <div class="search_preview" data-search="output"></div>
-      </div>
+  <div class="search" data-search id="search">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg>
+    <input
+      class="search_input"
+      placeholder="Search docs..."
+      data-search="source"
+      disabled />
+    <div class="search_output">
+      <div class="search_preview" data-search="output"></div>
     </div>
   </div>
 
-  <a class="sign-up" href="//replit.com/signup">Sign up</a>
+  <a class="sign-up desktop-sign-up" href="//replit.com/signup">Sign up</a>
 </nav>

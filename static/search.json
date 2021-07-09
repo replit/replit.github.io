@@ -642,6 +642,30 @@
     "slug": "/programming-ide/getting-started-nix#learn-more-about-nix"
   },
   {
+    "category": "Programming & IDE",
+    "name": "Debugging",
+    "heading": null,
+    "slug": "programming-ide/debugging"
+  },
+  {
+    "category": "Programming & IDE",
+    "name": "Debugging",
+    "heading": "Debugging",
+    "slug": "/programming-ide/debugging#debugging"
+  },
+  {
+    "category": "Programming & IDE",
+    "name": "Debugging",
+    "heading": "Multiplayer features",
+    "slug": "/programming-ide/debugging#multiplayer-features"
+  },
+  {
+    "category": "Programming & IDE",
+    "name": "Debugging",
+    "heading": "Adding support for other languages through nix",
+    "slug": "/programming-ide/debugging#adding-support-for-other-languages-through-nix"
+  },
+  {
     "category": "Hosting",
     "name": "Hosting web pages",
     "heading": null,
@@ -754,6 +778,12 @@
     "name": "Embedding repls",
     "heading": null,
     "slug": "hosting/embedding-repls"
+  },
+  {
+    "category": "Hosting",
+    "name": "Embedding repls",
+    "heading": "Embedding Repls",
+    "slug": "/hosting/embedding-repls#embedding-repls"
   },
   {
     "category": "Hosting",
@@ -4024,6 +4054,240 @@
     "name": "Stock Market Dashboard",
     "heading": "Where Next?",
     "slug": "/tutorials/22-personal-stock-market-dashboard#where-next"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": null,
+    "slug": "tutorials/23-build-asteroids-with-kaboom"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Building Asteroids in Kaboom.js",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#building-asteroids-in-kaboom-js"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Creating a new project and loading assets",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#creating-a-new-project-and-loading-assets"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Setting the scene",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#setting-the-scene"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "The player's ship",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#the-players-ship"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Movement controls",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#movement-controls"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Movement",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#movement"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Rocket animation",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#rocket-animation"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Shooting",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#shooting"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "The asteroids",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#the-asteroids"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Creation",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#creation"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Collisions",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#collisions"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Ending the game",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#ending-the-game"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Final touches",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#final-touches"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Background music",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#background-music"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Smaller asteroids",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#smaller-asteroids"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Temporary invulnerability",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#temporary-invulnerability"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Asteroids game with Kaboom.js",
+    "heading": "Where to next?",
+    "slug": "/tutorials/23-build-asteroids-with-kaboom#where-to-next"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": null,
+    "slug": "tutorials/24-build-space-shooter-with-kaboom"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Build a Space Shooter with Kaboom.js",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#build-a-space-shooter-with-kaboom-js"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Game Design",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#game-design"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Creating a New Project on Replit",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#creating-a-new-project-on-replit"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Getting Started with Kaboom.js",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#getting-started-with-kaboom-js"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Creating the Game Map",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#creating-the-game-map"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Adding the Spaceship",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#adding-the-spaceship"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Moving the Spaceship",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#moving-the-spaceship"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Adding Laser Guns",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#adding-laser-guns"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Adding Alien Space Bugs",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#adding-alien-space-bugs"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Moving the Aliens",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#moving-the-aliens"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Shooting the Aliens",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#shooting-the-aliens"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Exploding the Alien Bugs on Contact",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#exploding-the-alien-bugs-on-contact"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Adding Score and Shield UI",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#adding-score-and-shield-ui"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Allowing the Alien Bugs to Attack",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#allowing-the-alien-bugs-to-attack"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Raining Gems",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#raining-gems"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Collecting Gems",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#collecting-gems"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Adding Background Music",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#adding-background-music"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Playing the Game",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#playing-the-game"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Credits",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#credits"
+  },
+  {
+    "category": "Tutorials",
+    "name": "Space Shooter with Kaboom.js",
+    "heading": "Things to Try Next",
+    "slug": "/tutorials/24-build-space-shooter-with-kaboom#things-to-try-next"
   },
   {
     "category": "Tutorials",
