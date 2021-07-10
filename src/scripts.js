@@ -23,8 +23,7 @@ const initSearch = async () => {
         },
         ],
     });
-
-    const search = document.querySelector('[data-search]')
+    
     const source = document.querySelector('[data-search="source"]')
     const output = document.querySelector('[data-search="output"')
     source.disabled = false;
