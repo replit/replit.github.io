@@ -1,4 +1,4 @@
-# Embedding Repls
+# Embedding repls
 
 If you want to embed a repl in another platform. This guide will show you how it can be done using iframe, on WordPress, and on Medium. You will also learn what happens if you want to edit an embedded repl. 
 

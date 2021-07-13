@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Pinboard Project: Part 1
+# Pinboard project: part 1
 
 In this project, you'll create a 'Pinboard': a web application to save, categorise and collect images from across the internet. Users will be able to: 
 * Add new images to the board.

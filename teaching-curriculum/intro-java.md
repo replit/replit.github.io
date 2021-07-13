@@ -5,7 +5,7 @@ Welcome to this intro curriculum for learning to code with Java using the Replit
 ## The Full Curriculum
 
 ### Unit 1
-[Access unit 1.](https://docs.repl.it/curriculum/introJava1)
+[Access unit 1.](https://docs.replit.com/teaching-curriculum/intro-java-unit-1)
 
 Course contents:
 - Displaying values
@@ -13,7 +13,7 @@ Course contents:
 - Storing and displaying messages using values and variables
 
 ### Unit 2
-[Access unit 2.](https://docs.repl.it/curriculum/introJava2)
+[Access unit 2.](https://docs.replit.com/teaching-curriculum/intro-java-unit-2)
 
 Course contents:
 - Using a keyboard to enter data 
@@ -22,7 +22,7 @@ Course contents:
 - Some challenges using IPO program plan
 
 ### Unit 3
-[Access unit 3.](https://docs.repl.it/curriculum/introJava3)
+[Access unit 3.](https://docs.replit.com/teaching-curriculum/intro-java-unit-3)
 
 Course contents:
 - Thinking about sequence and introducing control structures

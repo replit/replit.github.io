@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# An Introduction to GraphQL (part 1)
+# An introduction to GraphQL (part 1)
 
 In this project, we will create a website that fetches data from a [GraphQL](https://graphql.org) endpoint. The endpoint exposes data related to an imagined podcast called *GraphQL FM*.
 

@@ -1,4 +1,4 @@
-## Reviewing submissions
+# Reviewing submissions
 
 [Leaving Feedback on Projects Using Annotations](#leaving-feedback-on-projects-using-annotations)
 

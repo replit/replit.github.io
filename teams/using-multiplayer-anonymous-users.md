@@ -15,4 +15,4 @@ Multiplayer can only be used if you're signed into Replit. We are working on som
 
 4. After they sign in, they'll be redirected to back to your repl as a collaborator!
 
-If you have any feedback, please let us know on our [feedback page](https://repl.it/feedback/).
+If you have any feedback, please let us know on our [feedback page](https://replit.canny.io/general-feedback).
